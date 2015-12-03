@@ -34,6 +34,9 @@ import static edu.cmu.pocketsphinx.SpeechRecognizerSetup.defaultSetup;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
 
 import android.app.Activity;
 import android.os.AsyncTask;
@@ -64,6 +67,8 @@ public class PocketSphinxActivity extends Activity implements
 
     private boolean start = false;
 
+    private List<String> sentenceList = new ArrayList<String>();
+
     @Override
     public void onCreate(Bundle state) {
         super.onCreate(state);
@@ -75,7 +80,21 @@ public class PocketSphinxActivity extends Activity implements
         controlBtn.setOnClickListener(this);
         handler = new Handler(this);
 
+        initData();
         initRecognizer();
+    }
+
+    private void initData(){
+        sentenceList.add("what's your name");
+        sentenceList.add("how are you");
+        sentenceList.add("good morning");
+        sentenceList.add("how much are these apples");
+    }
+
+    private String getNextString(){
+        Random random = new Random();
+        int i = random.nextInt(sentenceList.size());
+        return sentenceList.get(i);
     }
 
     private void initRecognizer(){
@@ -164,6 +183,10 @@ public class PocketSphinxActivity extends Activity implements
     private void startRecognizer(){
         stopRecognizer();
 
+//        String nextRead = getNextString();
+//        recognizer.addKeyphraseSearch(SENTENCE_SEARCH,nextRead);
+//        showCaption(nextRead);
+
         //recognizer.startListening(SENTENCE_SEARCH,10000); timeout=10s
         recognizer.startListening(SENTENCE_SEARCH); //stop manual
     }
@@ -193,8 +216,10 @@ public class PocketSphinxActivity extends Activity implements
         recognizer.addListener(this);
 
         // Create language model search: N-Gram Models
-        File languageModel = new File(assetsDir, "cmusphinx-5.0-en-us.lm.dmp");
+        File languageModel = new File(assetsDir, "4282.lm");
         recognizer.addNgramSearch(SENTENCE_SEARCH, languageModel);
+
+
     }
 
     @Override

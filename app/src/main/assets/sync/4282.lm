@@ -1,0 +1,147 @@
+language model created by Quicklm on thu dec  3 06:27:48 est 2015
+copyright (c) 1996-2010 carnegie mellon university and alexander i. rudnicky
+
+the model is in standard arpa format, designed by doug paul while he was at mitre.
+
+the code that was used to produce this language model is available in open source.
+please visit http://www.speech.cs.cmu.edu/tools/ for more information
+
+the (fixed) discount mass is 0.5. the backoffs are computed using the ratio method.
+this model based on a corpus of 11 sentences and 30 words
+
+\data\
+ngram 1=30
+ngram 2=49
+ngram 3=45
+
+\1-grams:
+-1.0985 </s> -0.3010
+-1.0985 <s> -0.2581
+-1.8388 are -0.2883
+-2.1399 at -0.2979
+-2.1399 can -0.2979
+-2.1399 canteen -0.2650
+-2.1399 car -0.2650
+-2.1399 color -0.2850
+-2.1399 day -0.2850
+-1.6628 do -0.2850
+-1.8388 exercises -0.2615
+-2.1399 fly -0.2650
+-2.1399 good -0.2915
+-2.1399 how -0.2947
+-1.8388 i -0.2947
+-1.4409 is -0.2784
+-1.6628 it -0.2403
+-2.1399 keys -0.2650
+-2.1399 monday -0.2947
+-1.6628 morning -0.2581
+-2.1399 my -0.2979
+-2.1399 six -0.2650
+-1.8388 the -0.2947
+-1.8388 today -0.2650
+-2.1399 toy -0.2979
+-2.1399 usually -0.2915
+-1.8388 what -0.2947
+-2.1399 when -0.2915
+-1.6628 where -0.2784
+-1.8388 you -0.2546
+
+\2-grams:
+-1.3424 <s> good 0.0000
+-1.3424 <s> how 0.0000
+-1.0414 <s> i 0.0000
+-1.3424 <s> it -0.2218
+-1.0414 <s> what 0.0000
+-1.3424 <s> when 0.0000
+-0.8653 <s> where 0.0000
+-0.6021 are the -0.1761
+-0.6021 are you -0.1761
+-0.3010 at six 0.0000
+-0.3010 can fly 0.0000
+-0.3010 canteen </s> -0.3010
+-0.3010 car </s> -0.3010
+-0.3010 color is -0.2041
+-0.3010 day is -0.2041
+-0.4771 do morning -0.1249
+-0.7782 do you -0.1761
+-0.6021 exercises </s> -0.3010
+-0.6021 exercises at 0.0000
+-0.3010 fly </s> -0.3010
+-0.3010 good morning -0.2218
+-0.3010 how are -0.1761
+-0.6021 i can 0.0000
+-0.6021 i usually 0.0000
+-0.6990 is it -0.1249
+-1.0000 is monday 0.0000
+-1.0000 is my 0.0000
+-1.0000 is the -0.1761
+-0.7782 it </s> -0.3010
+-0.7782 it is -0.2553
+-0.7782 it today 0.0000
+-0.3010 keys </s> -0.3010
+-0.3010 monday today 0.0000
+-0.7782 morning </s> -0.3010
+-0.4771 morning exercises 0.0000
+-0.3010 my toy 0.0000
+-0.3010 six </s> -0.3010
+-0.6021 the canteen 0.0000
+-0.6021 the keys 0.0000
+-0.3010 today </s> -0.3010
+-0.3010 toy car 0.0000
+-0.3010 usually do -0.1249
+-0.6021 what color 0.0000
+-0.6021 what day 0.0000
+-0.3010 when do -0.2218
+-0.7782 where are -0.1761
+-0.4771 where is -0.2041
+-0.6021 you </s> -0.3010
+-0.6021 you do -0.1249
+
+\3-grams:
+-0.3010 <s> good morning
+-0.3010 <s> how are
+-0.6021 <s> i can
+-0.6021 <s> i usually
+-0.3010 <s> it is
+-0.6021 <s> what color
+-0.6021 <s> what day
+-0.3010 <s> when do
+-0.7782 <s> where are
+-0.4771 <s> where is
+-0.3010 are the keys
+-0.3010 are you </s>
+-0.3010 at six </s>
+-0.3010 can fly </s>
+-0.3010 color is it
+-0.3010 day is it
+-0.3010 do morning exercises
+-0.3010 do you do
+-0.3010 exercises at six
+-0.3010 good morning </s>
+-0.3010 how are you
+-0.3010 i can fly
+-0.3010 i usually do
+-0.6021 is it </s>
+-0.6021 is it today
+-0.3010 is monday today
+-0.3010 is my toy
+-0.3010 is the canteen
+-0.3010 it is monday
+-0.3010 it today </s>
+-0.3010 monday today </s>
+-0.6021 morning exercises </s>
+-0.6021 morning exercises at
+-0.3010 my toy car
+-0.3010 the canteen </s>
+-0.3010 the keys </s>
+-0.3010 toy car </s>
+-0.3010 usually do morning
+-0.3010 what color is
+-0.3010 what day is
+-0.3010 when do you
+-0.3010 where are the
+-0.6021 where is my
+-0.6021 where is the
+-0.3010 you do morning
+
+\end\
