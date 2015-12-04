@@ -1,0 +1,279 @@
+language model created by quicklm on thu dec  3 21:22:24 est 2015
+copyright (c) 1996-2010 carnegie mellon university and alexander i. rudnicky
+
+the model is in standard arpa format, designed by doug paul while he was at mitre.
+
+the code that was used to produce this language model is available in open source.
+please visit http://www.speech.cs.cmu.edu/tools/ for more information
+
+the (fixed) discount mass is 0.5. the backoffs are computed using the ratio method.
+this model based on a corpus of 23 sentences and 64 words
+
+\data\
+ngram 1=64
+ngram 2=101
+ngram 3=91
+
+\1-grams:
+-1.0854 </s> -0.3010
+-1.0854 <s> -0.2604
+-2.4472 a -0.2995
+-2.4472 and -0.2995
+-2.1461 are -0.2932
+-2.4472 at -0.2995
+-2.4472 bag -0.2638
+-2.4472 books -0.2995
+-2.4472 by -0.2995
+-2.1461 can -0.2948
+-2.4472 canteen -0.2638
+-2.4472 car -0.2638
+-2.4472 color -0.2916
+-2.4472 day -0.2916
+-1.9700 do -0.2916
+-2.1461 exercises -0.2621
+-2.4472 father -0.2638
+-2.4472 five -0.2979
+-2.4472 fly -0.2638
+-2.4472 good -0.2964
+-2.4472 he's -0.2964
+-2.4472 his -0.2995
+-2.4472 hobby -0.2638
+-2.1461 how -0.2964
+-1.8451 i -0.2932
+-2.4472 in -0.2964
+-1.6690 is -0.2852
+-1.9700 it -0.2501
+-2.1461 it's -0.2964
+-2.4472 keys -0.2638
+-2.4472 kites -0.2979
+-2.4472 man -0.2638
+-2.4472 monday -0.2979
+-1.9700 morning -0.2604
+-2.4472 much -0.2995
+-1.9700 my -0.2964
+-2.4472 name -0.2638
+-2.1461 nine -0.2964
+-2.4472 ninety -0.2979
+-2.4472 o'clock -0.2638
+-2.4472 pencil -0.2995
+-2.4472 see -0.2638
+-2.4472 shopping -0.2638
+-2.4472 six -0.2638
+-2.4472 some -0.2995
+-2.4472 that -0.2995
+-2.1461 the -0.2979
+-2.4472 there -0.2916
+-2.4472 they're -0.2995
+-2.4472 thirty -0.2995
+-2.1461 today -0.2638
+-2.4472 toy -0.2995
+-2.4472 train -0.2638
+-2.4472 usually -0.2964
+-2.1461 went -0.2979
+-2.1461 what -0.2979
+-2.1461 what's -0.2979
+-2.4472 when -0.2964
+-1.9700 where -0.2884
+-2.4472 who -0.2638
+-2.4472 who's -0.2995
+-1.9700 you -0.2570
+-2.4472 your -0.2995
+-2.1461 yuan -0.2638
+
+\2-grams:
+-1.6628 <s> good 0.0000
+-1.6628 <s> he's 0.0000
+-1.3617 <s> how 0.0000
+-1.0607 <s> i 0.0000
+-1.6628 <s> it -0.2218
+-1.3617 <s> it's 0.0000
+-1.6628 <s> there 0.0000
+-1.6628 <s> they're 0.0000
+-1.3617 <s> what 0.0000
+-1.3617 <s> what's 0.0000
+-1.6628 <s> when 0.0000
+-1.1856 <s> where 0.0000
+-1.6628 <s> who 0.0000
+-1.6628 <s> who's 0.0000
+-0.3010 a pencil 0.0000
+-0.3010 and some 0.0000
+-0.6021 are the -0.1761
+-0.6021 are you -0.2218
+-0.3010 at six 0.0000
+-0.3010 bag </s> -0.3010
+-0.3010 books in 0.0000
+-0.3010 by train 0.0000
+-0.6021 can fly 0.0000
+-0.6021 can you -0.2218
+-0.3010 canteen </s> -0.3010
+-0.3010 car </s> -0.3010
+-0.3010 color is -0.2218
+-0.3010 day is -0.2218
+-0.4771 do morning -0.1249
+-0.7782 do you -0.2218
+-0.6021 exercises </s> -0.3010
+-0.6021 exercises at 0.0000
+-0.3010 father </s> -0.3010
+-0.3010 five yuan 0.0000
+-0.3010 fly </s> -0.3010
+-0.3010 good morning -0.2218
+-0.3010 he's my -0.2218
+-0.3010 his hobby 0.0000
+-0.3010 hobby </s> -0.3010
+-0.6021 how are -0.1761
+-0.6021 how much 0.0000
+-0.9031 i can -0.1761
+-0.9031 i usually 0.0000
+-0.6021 i went 0.0000
+-0.3010 in my -0.2218
+-1.0792 is a 0.0000
+-0.7782 is it -0.1249
+-1.0792 is monday 0.0000
+-1.0792 is my -0.2218
+-1.0792 is the -0.1761
+-0.7782 it </s> -0.3010
+-0.7782 it is -0.2632
+-0.7782 it today 0.0000
+-0.6021 it's nine -0.1761
+-0.6021 it's ninety 0.0000
+-0.3010 keys </s> -0.3010
+-0.3010 kites can -0.1761
+-0.3010 man </s> -0.3010
+-0.3010 monday today 0.0000
+-0.7782 morning </s> -0.3010
+-0.4771 morning exercises 0.0000
+-0.3010 much kites 0.0000
+-0.7782 my bag 0.0000
+-0.7782 my father 0.0000
+-0.7782 my toy 0.0000
+-0.3010 name </s> -0.3010
+-0.6021 nine o'clock 0.0000
+-0.6021 nine yuan 0.0000
+-0.3010 ninety nine -0.1761
+-0.3010 o'clock </s> -0.3010
+-0.3010 pencil and 0.0000
+-0.3010 see </s> -0.3010
+-0.3010 shopping </s> -0.3010
+-0.3010 six </s> -0.3010
+-0.3010 some books 0.0000
+-0.3010 that man 0.0000
+-0.6021 the canteen 0.0000
+-0.6021 the keys 0.0000
+-0.3010 there is -0.2632
+-0.3010 they're thirty 0.0000
+-0.3010 thirty five 0.0000
+-0.3010 today </s> -0.3010
+-0.3010 toy car 0.0000
+-0.3010 train </s> -0.3010
+-0.3010 usually do -0.1249
+-0.6021 went by 0.0000
+-0.6021 went shopping 0.0000
+-0.6021 what color 0.0000
+-0.6021 what day 0.0000
+-0.6021 what's his 0.0000
+-0.6021 what's your 0.0000
+-0.3010 when do -0.2218
+-0.7782 where are -0.1761
+-0.4771 where is -0.2218
+-0.3010 who </s> -0.3010
+-0.3010 who's that 0.0000
+-0.7782 you </s> -0.3010
+-0.7782 you do -0.1249
+-0.7782 you see 0.0000
+-0.3010 your name 0.0000
+-0.3010 yuan </s> -0.3010
+
+\3-grams:
+-0.3010 <s> good morning
+-0.3010 <s> he's my
+-0.6021 <s> how are
+-0.6021 <s> how much
+-0.9031 <s> i can
+-0.9031 <s> i usually
+-0.6021 <s> i went
+-0.3010 <s> it is
+-0.6021 <s> it's nine
+-0.6021 <s> it's ninety
+-0.3010 <s> there is
+-0.3010 <s> they're thirty
+-0.6021 <s> what color
+-0.6021 <s> what day
+-0.6021 <s> what's his
+-0.6021 <s> what's your
+-0.3010 <s> when do
+-0.7782 <s> where are
+-0.4771 <s> where is
+-0.3010 <s> who </s>
+-0.3010 <s> who's that
+-0.3010 a pencil and
+-0.3010 and some books
+-0.3010 are the keys
+-0.3010 are you </s>
+-0.3010 at six </s>
+-0.3010 books in my
+-0.3010 by train </s>
+-0.3010 can fly </s>
+-0.3010 can you see
+-0.3010 color is it
+-0.3010 day is it
+-0.3010 do morning exercises
+-0.3010 do you do
+-0.3010 exercises at six
+-0.3010 five yuan </s>
+-0.3010 good morning </s>
+-0.3010 he's my father
+-0.3010 his hobby </s>
+-0.3010 how are you
+-0.3010 how much kites
+-0.3010 i can fly
+-0.3010 i usually do
+-0.6021 i went by
+-0.6021 i went shopping
+-0.3010 in my bag
+-0.3010 is a pencil
+-0.6021 is it </s>
+-0.6021 is it today
+-0.3010 is monday today
+-0.3010 is my toy
+-0.3010 is the canteen
+-0.3010 it is monday
+-0.3010 it today </s>
+-0.3010 it's nine o'clock
+-0.3010 it's ninety nine
+-0.3010 kites can you
+-0.3010 monday today </s>
+-0.6021 morning exercises </s>
+-0.6021 morning exercises at
+-0.3010 much kites can
+-0.3010 my bag </s>
+-0.3010 my father </s>
+-0.3010 my toy car
+-0.3010 nine o'clock </s>
+-0.3010 nine yuan </s>
+-0.3010 ninety nine yuan
+-0.3010 pencil and some
+-0.3010 some books in
+-0.3010 that man </s>
+-0.3010 the canteen </s>
+-0.3010 the keys </s>
+-0.3010 there is a
+-0.3010 they're thirty five
+-0.3010 thirty five yuan
+-0.3010 toy car </s>
+-0.3010 usually do morning
+-0.3010 went by train
+-0.3010 went shopping </s>
+-0.3010 what color is
+-0.3010 what day is
+-0.3010 what's his hobby
+-0.3010 what's your name
+-0.3010 when do you
+-0.3010 where are the
+-0.6021 where is my
+-0.6021 where is the
+-0.3010 who's that man
+-0.3010 you do morning
+-0.3010 you see </s>
+-0.3010 your name </s>
+
+\end\

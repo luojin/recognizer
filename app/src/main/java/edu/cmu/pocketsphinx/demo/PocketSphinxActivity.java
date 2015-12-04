@@ -216,7 +216,7 @@ public class PocketSphinxActivity extends Activity implements
         recognizer.addListener(this);
 
         // Create language model search: N-Gram Models
-        File languageModel = new File(assetsDir, "4282.lm");
+        File languageModel = new File(assetsDir, "6258.lm");
         recognizer.addNgramSearch(SENTENCE_SEARCH, languageModel);
 
 
