@@ -38,8 +38,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+import android.annotation.TargetApi;
 import android.app.Activity;
 import android.os.AsyncTask;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -51,6 +53,8 @@ import edu.cmu.pocketsphinx.Assets;
 import edu.cmu.pocketsphinx.Hypothesis;
 import edu.cmu.pocketsphinx.RecognitionListener;
 import edu.cmu.pocketsphinx.SpeechRecognizer;
+import edu.cmu.pocketsphinx.WordModel;
+import edu.cmu.pocketsphinx.widgets.DiffColorTextView;
 
 public class PocketSphinxActivity extends Activity implements
         RecognitionListener, Handler.Callback, View.OnClickListener {
@@ -68,6 +72,7 @@ public class PocketSphinxActivity extends Activity implements
     private boolean start = false;
 
     private List<String> sentenceList = new ArrayList<String>();
+    private List<WordModel> wordList = new ArrayList<>();
 
     @Override
     public void onCreate(Bundle state) {
@@ -82,6 +87,8 @@ public class PocketSphinxActivity extends Activity implements
 
         initData();
         initRecognizer();
+        DiffColorTextView tv= (DiffColorTextView) findViewById(R.id.text);
+        tv.setText(wordList);
     }
 
     private void initData(){
@@ -89,6 +96,11 @@ public class PocketSphinxActivity extends Activity implements
         sentenceList.add("how are you");
         sentenceList.add("good morning");
         sentenceList.add("how much are these apples");
+
+        wordList.add(new WordModel("what's"));
+        wordList.add(new WordModel("your",false));
+        wordList.add(new WordModel("gpqtyidgfbghjklb"));
+        wordList.add(new WordModel("?",false));
     }
 
     private String getNextString(){
@@ -150,8 +162,8 @@ public class PocketSphinxActivity extends Activity implements
         if (hypothesis == null)
     	    return;
 
-        String text = hypothesis.getHypstr();
-        showLog("onPartialResult: " + text);
+//        String text = hypothesis.getHypstr();
+//        showLog("onPartialResult: " + text);
     }
 
     /**
@@ -173,11 +185,12 @@ public class PocketSphinxActivity extends Activity implements
     /**
      * We stop recognizer here to get a final result
      */
+    @TargetApi(Build.VERSION_CODES.ICE_CREAM_SANDWICH_MR1)
     @Override
     public void onEndOfSpeech() {
         showLog("onEndOfSpeech");
 //        stopRecognizer();
-//        controlBtn.callOnClick();
+        controlBtn.callOnClick();
     }
 
     private void startRecognizer(){
@@ -216,7 +229,7 @@ public class PocketSphinxActivity extends Activity implements
         recognizer.addListener(this);
 
         // Create language model search: N-Gram Models
-        File languageModel = new File(assetsDir, "6258.lm");
+        File languageModel = new File(assetsDir, "corpus.lm");
         recognizer.addNgramSearch(SENTENCE_SEARCH, languageModel);
 
 
