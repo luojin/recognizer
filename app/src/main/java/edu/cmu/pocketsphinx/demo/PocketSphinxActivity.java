@@ -285,7 +285,7 @@ public class PocketSphinxActivity extends Activity implements
         wordList.clear();
         String[] originList = origin.split(" ");
         for (String s:originList){
-            if(result.contains(s))
+            if(result.contains(s.replaceAll("[^a-z]+","")))
                 wordList.add(new WordModel(s,true));
             else
                 wordList.add(new WordModel(s,false));
