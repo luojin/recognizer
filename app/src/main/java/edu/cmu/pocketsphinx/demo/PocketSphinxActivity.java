@@ -32,8 +32,10 @@ package edu.cmu.pocketsphinx.demo;
 
 import static edu.cmu.pocketsphinx.SpeechRecognizerSetup.defaultSetup;
 
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -45,6 +47,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -62,14 +65,17 @@ public class PocketSphinxActivity extends Activity implements
     private TextView captionTV;
     private Handler handler;
     private Button controlBtn;
+    private DiffColorTextView compareTV;
 		
     private static final String SENTENCE_SEARCH = "sentence";
     private SpeechRecognizer recognizer;
 
     private static final int MSG_NEW_MESSAGE = 1;
     private static final int MSG_NEW_CAPTION = 2;
+    private static final int MSG_NEW_RESULT  = 3;
 
     private boolean start = false;
+    private String currentStr;
 
     private List<String> sentenceList = new ArrayList<String>();
     private List<WordModel> wordList = new ArrayList<>();
@@ -82,31 +88,43 @@ public class PocketSphinxActivity extends Activity implements
         resultTV = (TextView) findViewById(R.id.result_text);
         captionTV = (TextView) findViewById(R.id.caption_text);
         controlBtn = (Button) findViewById(R.id.controlBtn);
+        compareTV = (DiffColorTextView) findViewById(R.id.compare_text);
         controlBtn.setOnClickListener(this);
         handler = new Handler(this);
 
         initData();
         initRecognizer();
-        DiffColorTextView tv= (DiffColorTextView) findViewById(R.id.text);
-        tv.setText(wordList);
     }
 
     private void initData(){
-        sentenceList.add("what's your name");
-        sentenceList.add("how are you");
-        sentenceList.add("good morning");
-        sentenceList.add("how much are these apples");
+        new AsyncTask<Void, Void, Exception>(){
 
-        wordList.add(new WordModel("what's"));
-        wordList.add(new WordModel("your",false));
-        wordList.add(new WordModel("gpqtyidgfbghjklb"));
-        wordList.add(new WordModel("?",false));
+            @Override
+            protected Exception doInBackground(Void... params) {
+                try{
+                    InputStreamReader inputStreamReader = new InputStreamReader(
+                            getResources().getAssets().open("copus.txt"));
+                    BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+                    String line;
+                    while( (line=bufferedReader.readLine())!=null)
+                        sentenceList.add(line);
+                }catch (Exception e){
+                    e.printStackTrace();
+                }
+                return null;
+            }
+        }.execute();
     }
 
     private String getNextString(){
-        Random random = new Random();
-        int i = random.nextInt(sentenceList.size());
-        return sentenceList.get(i);
+        if(sentenceList.size()<=0){
+            currentStr = "nice to meet you";
+        }else {
+            Random random = new Random();
+            int i = random.nextInt(sentenceList.size());
+            currentStr = sentenceList.get(i);
+        }
+        return currentStr;
     }
 
     private void initRecognizer(){
@@ -161,9 +179,6 @@ public class PocketSphinxActivity extends Activity implements
     public void onPartialResult(Hypothesis hypothesis) {
         if (hypothesis == null)
     	    return;
-
-//        String text = hypothesis.getHypstr();
-//        showLog("onPartialResult: " + text);
     }
 
     /**
@@ -175,11 +190,12 @@ public class PocketSphinxActivity extends Activity implements
             return;
 
         showLog("onResult: " + hypothesis.getHypstr());
+        handleResult(hypothesis.getHypstr());
     }
 
     @Override
     public void onBeginningOfSpeech() {
-        showLog("onBeginningOfSpeech");
+//        showLog("onBeginningOfSpeech");
     }
 
     /**
@@ -188,7 +204,7 @@ public class PocketSphinxActivity extends Activity implements
     @TargetApi(Build.VERSION_CODES.ICE_CREAM_SANDWICH_MR1)
     @Override
     public void onEndOfSpeech() {
-        showLog("onEndOfSpeech");
+//        showLog("onEndOfSpeech");
 //        stopRecognizer();
         controlBtn.callOnClick();
     }
@@ -196,9 +212,8 @@ public class PocketSphinxActivity extends Activity implements
     private void startRecognizer(){
         stopRecognizer();
 
-//        String nextRead = getNextString();
-//        recognizer.addKeyphraseSearch(SENTENCE_SEARCH,nextRead);
-//        showCaption(nextRead);
+        String nextRead = getNextString();
+        showCaption(nextRead);
 
         //recognizer.startListening(SENTENCE_SEARCH,10000); timeout=10s
         recognizer.startListening(SENTENCE_SEARCH); //stop manual
@@ -229,10 +244,8 @@ public class PocketSphinxActivity extends Activity implements
         recognizer.addListener(this);
 
         // Create language model search: N-Gram Models
-        File languageModel = new File(assetsDir, "corpus.lm");
+        File languageModel = new File(assetsDir, "7511.lm");
         recognizer.addNgramSearch(SENTENCE_SEARCH, languageModel);
-
-
     }
 
     @Override
@@ -261,6 +274,26 @@ public class PocketSphinxActivity extends Activity implements
         handler.sendMessage(msg);
     }
 
+    private void handleResult(String result){
+        Message msg = Message.obtain();
+        msg.what = MSG_NEW_RESULT;
+        msg.obj = result;
+        handler.sendMessage(msg);
+    }
+
+    private void showResult(String origin, String result){
+        wordList.clear();
+        String[] originList = origin.split(" ");
+        for (String s:originList){
+            if(result.contains(s))
+                wordList.add(new WordModel(s,true));
+            else
+                wordList.add(new WordModel(s,false));
+        }
+        Log.e("test","size="+wordList.size());
+        compareTV.setText(wordList);
+    }
+
     private void setControlBtn(boolean begin){
         if(!begin)
             controlBtn.setText("start");
@@ -278,6 +311,10 @@ public class PocketSphinxActivity extends Activity implements
             case MSG_NEW_CAPTION:
                 String caption = (String) msg.obj;
                 captionTV.setText(caption);
+                break;
+            case MSG_NEW_RESULT:
+                String result = (String)msg.obj;
+                showResult(currentStr, result);
                 break;
         }
 

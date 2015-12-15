@@ -8,12 +8,13 @@
     android:padding="16dp">
 
     <edu.cmu.pocketsphinx.widgets.DiffColorTextView
-        android:id="@+id/text"
+        android:id="@+id/compare_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:textSize="10dp"
-        app:correctColor="#00ffff"
-        app:wrongColor="#ff00ff"/>
+        app:textSize="14dp"
+        android:layout_gravity="center_horizontal"
+        app:correctColor="#330088"
+        app:wrongColor="#bb0000"/>
 
     <TextView
         android:id="@+id/caption_text"

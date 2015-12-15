@@ -9,6 +9,7 @@ import android.graphics.Rect;
 import android.util.AttributeSet;
 import android.view.View;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import edu.cmu.pocketsphinx.WordModel;
@@ -25,7 +26,7 @@ public class DiffColorTextView extends View {
     private Paint mPaint;
     private Rect mBound;
 
-    private List<WordModel> mWordList;
+    private List<WordModel> mWordList = new ArrayList<>();
     private StringBuffer mStringBuf = new StringBuffer();
 
     public DiffColorTextView(Context context) {
@@ -147,6 +148,7 @@ public class DiffColorTextView extends View {
         if(mWordList==null)
             return;
 
+        requestLayout();
         postInvalidate();
     }
 }

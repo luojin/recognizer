@@ -1,0 +1,2373 @@
+language model created by quicklm on tue dec 15 06:47:54 est 2015
+copyright (c) 1996-2010 carnegie mellon university and alexander i. rudnicky
+
+the model is in standard arpa format, designed by doug paul while he was at mitre.
+
+the code that was used to produce this language model is available in open source.
+please visit http://www.speech.cs.cmu.edu/tools/ for more information
+
+the (fixed) discount mass is 0.5. the backoffs are computed using the ratio method.
+this model based on a corpus of 155 sentences and 360 words
+
+\data\
+ngram 1=360
+ngram 2=935
+ngram 3=1055
+
+\1-grams:
+-1.2940 </s> -0.3010
+-1.2940 <s> -0.2431
+-1.5253 a -0.2487
+-2.7853 about -0.2837
+-3.4843 afford -0.2946
+-3.4843 after -0.3009
+-3.4843 afternoon -0.2784
+-2.8822 again -0.2956
+-3.4843 ages -0.2904
+-3.0072 all -0.2982
+-3.1833 already -0.3006
+-3.4843 always -0.3009
+-3.4843 amazing -0.2969
+-3.4843 an -0.3009
+-2.4843 and -0.2749
+-3.4843 angeles -0.2947
+-3.0072 any -0.3006
+-3.4843 anyting -0.3009
+-3.4843 anywhere -0.2784
+-2.7061 are -0.2904
+-3.4843 around -0.3002
+-3.4843 asked -0.2904
+-2.7061 at -0.2772
+-3.1833 away -0.2987
+-1.7361 b -0.2532
+-3.4843 back -0.3009
+-3.4843 bad -0.3002
+-3.4843 bag -0.2989
+-2.8822 be -0.2985
+-3.4843 beautiful -0.3009
+-3.4843 beautifully -0.3006
+-2.7061 been -0.2992
+-3.4843 beg -0.2996
+-3.4843 believe -0.2969
+-3.4843 best -0.2946
+-3.4843 better -0.3005
+-3.4843 borrowed -0.2996
+-3.4843 borrowing -0.2996
+-3.4843 bought -0.2969
+-3.4843 bound -0.2946
+-3.0072 brother -0.2781
+-3.4843 brown -0.2784
+-2.6392 but -0.2781
+-3.4843 by -0.2784
+-3.4843 cab -0.2784
+-3.1833 california -0.2989
+-3.4843 calling -0.2946
+-3.1833 can -0.3003
+-2.8822 can't -0.2659
+-3.4843 car -0.2784
+-3.1833 care -0.2979
+-3.4843 carry -0.3005
+-3.4843 catch -0.2992
+-3.4843 catching -0.2990
+-3.4843 chaged -0.3009
+-3.4843 chance -0.2993
+-3.4843 cheap -0.2784
+-3.4843 christmas -0.2784
+-3.4843 climate -0.3002
+-3.4843 coat -0.2784
+-3.4843 coffee -0.2784
+-3.4843 color -0.3005
+-3.1833 come -0.2940
+-3.4843 coming -0.2784
+-2.7061 could -0.2983
+-3.4843 cousin -0.3007
+-3.4843 dallas -0.2784
+-3.4843 david -0.2784
+-3.4843 days -0.2930
+-3.4843 decided -0.2992
+-3.4843 depends -0.3002
+-3.4843 did -0.2904
+-3.1833 didn't -0.3007
+-3.4843 diego -0.2947
+-3.1833 different -0.2989
+-2.3082 do -0.2659
+-3.4843 does -0.2969
+-3.1833 doing -0.2782
+-2.7853 don't -0.2898
+-3.4843 dropped -0.3000
+-3.4843 dubois -0.2784
+-3.4843 each -0.3009
+-3.1833 early -0.2782
+-3.4843 easy -0.2784
+-3.4843 either -0.2784
+-3.4843 ello -0.2784
+-3.4843 end -0.2993
+-3.4843 enjoyable -0.3009
+-3.4843 enjoyed -0.2969
+-3.4843 enjoying -0.2996
+-3.4843 evening -0.2784
+-3.4843 ever -0.3000
+-3.4843 everyone -0.2784
+-3.4843 everything -0.2784
+-3.1833 exactly -0.2784
+-3.4843 excuse -0.2995
+-3.4843 expected -0.2784
+-3.1833 expensive -0.2782
+-3.4843 family -0.2989
+-3.4843 family's -0.3007
+-3.4843 far -0.2784
+-3.4843 feel -0.3002
+-3.4843 feeling -0.2879
+-3.1833 few -0.3007
+-3.1833 find -0.2966
+-3.4843 first -0.2947
+-3.1833 fits -0.3005
+-3.4843 flying -0.3007
+-2.3082 for -0.2716
+-3.1833 forget -0.2946
+-3.4843 francisco -0.2784
+-3.4843 friend -0.2993
+-3.4843 friend's -0.2996
+-3.4843 friends -0.3003
+-3.4843 from -0.2992
+-2.6392 get -0.2883
+-3.4843 give -0.2997
+-3.1833 glad -0.2837
+-3.1833 go -0.2784
+-3.4843 goes -0.3009
+-2.5301 going -0.2713
+-3.0072 good -0.2990
+-2.4843 goodbye -0.2684
+-2.7061 got -0.2811
+-3.4843 great -0.3007
+-3.0072 guess -0.2708
+-3.4843 had -0.2879
+-3.4843 half -0.3009
+-3.4843 hand -0.2784
+-3.4843 hands -0.3002
+-3.4843 happy -0.3006
+-3.4843 hat -0.2784
+-2.2802 have -0.2691
+-2.8822 haven't -0.2997
+-3.1833 having -0.2871
+-3.4843 havn't -0.3007
+-3.4843 hear -0.2992
+-3.4843 hello -0.3009
+-2.8822 help -0.2784
+-2.8822 here -0.2764
+-3.4843 hi -0.2784
+-3.4843 holidays -0.2784
+-3.1833 home -0.2775
+-3.4843 homesick -0.2996
+-3.0072 hope -0.2830
+-2.6392 how -0.2963
+-3.4843 hurry -0.2947
+-1.8408 i -0.2849
+-2.7061 i'd -0.2989
+-2.7853 i'll -0.2970
+-2.3382 i'm -0.2952
+-2.7061 i've -0.2990
+-2.5301 if -0.2760
+-3.4843 impression -0.2993
+-2.6392 in -0.2793
+-3.4843 incredible -0.2784
+-3.4843 introduce -0.2879
+-3.4843 invited -0.3003
+-2.8822 is -0.2999
+-2.0219 it -0.2612
+-2.4843 it's -0.2805
+-3.4843 jacket -0.2784
+-3.4843 jobs -0.2784
+-3.4843 joe's -0.3006
+-2.5812 just -0.2946
+-3.4843 keep -0.3000
+-3.4843 know -0.3009
+-3.4843 la -0.3009
+-3.4843 late -0.2784
+-3.4843 lately -0.2987
+-3.4843 later -0.2784
+-3.4843 least -0.2987
+-2.8822 leave -0.2776
+-3.4843 leaves -0.3002
+-3.4843 leaving -0.2784
+-3.4843 lend -0.2995
+-3.0072 let -0.2888
+-2.4051 like -0.2732
+-3.0072 little -0.3006
+-3.1833 long -0.2773
+-3.1833 longer -0.2784
+-3.1833 look -0.2990
+-3.0072 looks -0.3002
+-3.4843 los -0.3009
+-3.1833 love -0.2937
+-3.4843 lttle -0.3005
+-3.4843 lucky -0.2946
+-3.1833 many -0.3007
+-3.4843 mary -0.3005
+-3.4843 matches -0.2996
+-2.4429 me -0.2597
+-3.4843 meal -0.2784
+-2.7853 meet -0.2890
+-3.4843 meeting -0.3009
+-3.4843 mention -0.2969
+-3.4843 merry -0.3009
+-3.1833 mind -0.2934
+-3.1833 mine -0.2999
+-3.4843 monday -0.3007
+-3.4843 month -0.2784
+-3.4843 more -0.3009
+-3.4843 moved -0.3007
+-3.4843 mrs -0.3009
+-3.4843 mrshughs -0.3005
+-2.7061 much -0.2713
+-3.4843 must -0.3005
+-2.5301 my -0.2995
+-3.0072 new -0.3005
+-3.0072 next -0.3002
+-2.5301 nice -0.2917
+-2.6392 no -0.2920
+-2.7853 not -0.2986
+-3.4843 now -0.2784
+-2.4051 of -0.2845
+-3.4843 off -0.2784
+-2.4843 oh -0.2863
+-3.0072 ok -0.2784
+-2.7061 on -0.2969
+-3.1833 one -0.2977
+-3.1833 or -0.3007
+-3.4843 other -0.2989
+-3.4843 our -0.3007
+-2.7853 over -0.2882
+-3.4843 palm -0.3009
+-3.4843 pants -0.2784
+-3.4843 pardon -0.2784
+-3.4843 parents -0.2784
+-3.1833 party -0.2784
+-3.4843 past -0.3009
+-3.4843 people -0.3009
+-3.4843 perfectly -0.2784
+-3.4843 peter -0.3009
+-3.4843 pierre -0.3009
+-3.4843 place -0.2784
+-3.4843 plane -0.3009
+-3.1833 plans -0.2784
+-3.4843 please -0.3003
+-3.4843 pleased -0.2946
+-3.1833 pleasure -0.2716
+-3.4843 possible -0.2784
+-3.4843 price -0.2784
+-3.4843 probably -0.2999
+-2.4843 really -0.2969
+-3.4843 records -0.2784
+-3.4843 reemmate's -0.3007
+-3.4843 relatives -0.2784
+-3.4843 remember -0.2946
+-3.4843 rest -0.2993
+-3.4843 right -0.2784
+-3.4843 road -0.2784
+-2.7853 said -0.2784
+-3.4843 sale -0.2784
+-3.4843 sam -0.2784
+-2.8822 same -0.2716
+-3.1833 san -0.3007
+-2.7853 say -0.2996
+-3.0072 see -0.2904
+-3.4843 seem -0.3009
+-3.1833 seen -0.2902
+-3.4843 shake -0.3009
+-3.4843 shame -0.3002
+-3.4843 shirt -0.2784
+-3.4843 should -0.3005
+-3.4843 sich -0.2987
+-3.4843 sister's -0.3000
+-3.4843 smith -0.3002
+-2.8822 so -0.2997
+-2.7853 some -0.2986
+-3.4843 something -0.2784
+-2.8822 soon -0.2782
+-2.8822 sorry -0.2829
+-3.4843 special -0.2784
+-3.4843 springs -0.3002
+-3.4843 states -0.2784
+-2.7061 stay -0.2625
+-3.4843 stayed -0.3006
+-3.4843 still -0.3009
+-3.4843 strange -0.2946
+-3.4843 stranger -0.2987
+-3.4843 suitcase -0.2989
+-3.4843 sunday -0.3009
+-3.0072 sure -0.2992
+-3.4843 sweater -0.2784
+-3.0072 take -0.2966
+-3.4843 takes -0.3000
+-3.4843 tell -0.2995
+-3.4843 terrific -0.2784
+-3.4843 texas -0.3005
+-2.7853 thank -0.2904
+-2.8822 thanks -0.2880
+-3.4843 thanksgiving -0.2784
+-2.7061 that -0.2661
+-2.6392 that's -0.2845
+-2.3382 the -0.2986
+-3.1833 there -0.2779
+-3.4843 they -0.3009
+-3.4843 things -0.3009
+-2.6392 think -0.2821
+-2.8822 this -0.3002
+-3.4843 thought -0.3003
+-2.6392 time -0.2704
+-1.8311 to -0.2546
+-3.4843 tomorrow -0.2784
+-2.8822 too -0.2729
+-3.4843 touch -0.2784
+-3.4843 train -0.2784
+-3.4843 trip -0.2784
+-3.1833 trouble -0.2939
+-3.4843 try -0.2946
+-3.4843 tuesday -0.2993
+-3.4843 typewriter -0.2784
+-3.4843 uncle -0.2993
+-3.4843 united -0.3009
+-2.8822 until -0.2976
+-3.1833 up -0.2995
+-3.0072 use -0.2871
+-3.0072 used -0.2946
+-3.4843 vacation -0.2784
+-2.5301 very -0.2982
+-3.4843 visit -0.3009
+-3.4843 visiting -0.3009
+-3.4843 wanted -0.3003
+-2.7853 was -0.2852
+-3.4843 washington -0.2784
+-3.4843 wasn't -0.2997
+-3.1833 way -0.2775
+-3.1833 we -0.2987
+-3.4843 we're -0.3007
+-3.4843 weather -0.3005
+-3.1833 week -0.2784
+-3.1833 weekend -0.2770
+-3.4843 weeks -0.2784
+-2.4843 well -0.2867
+-3.4843 wendy -0.3002
+-3.1833 went -0.2946
+-3.0072 were -0.2902
+-3.4843 weren't -0.2989
+-2.3704 what -0.2616
+-3.4843 what's -0.2996
+-2.7061 when -0.2748
+-2.8822 where -0.2778
+-3.4843 why -0.3003
+-3.0072 wish -0.2839
+-3.0072 with -0.2876
+-3.1833 won't -0.2902
+-3.4843 wonderful -0.3009
+-3.4843 wondering -0.2997
+-3.4843 worry -0.3007
+-2.8822 would -0.2880
+-3.4843 wouldn't -0.3007
+-3.1833 year -0.2784
+-2.7853 yes -0.2890
+-3.4843 yesterday -0.2784
+-3.1833 yet -0.2775
+-1.6151 you -0.2195
+-3.1833 you'd -0.2989
+-3.1833 you'll -0.3000
+-2.7853 you're -0.2995
+-2.4843 your -0.2986
+-3.4843 yourself -0.2996
+
+\2-grams:
+-0.6784 <s> a -0.1054
+-2.4914 <s> are 0.0000
+-0.7510 <s> b 0.0000
+-2.4914 <s> don't -0.2553
+-2.4914 <s> ello 0.0000
+-2.4914 <s> happy 0.0000
+-2.4914 <s> have -0.2272
+-2.4914 <s> hi 0.0000
+-2.0142 <s> how -0.1963
+-2.4914 <s> i -0.2910
+-2.4914 <s> i'm -0.2852
+-2.4914 <s> i've -0.1249
+-2.4914 <s> if -0.2762
+-2.4914 <s> it -0.2935
+-2.1903 <s> it's -0.2304
+-2.4914 <s> many -0.1761
+-2.4914 <s> mary 0.0000
+-2.4914 <s> merry 0.0000
+-2.4914 <s> mrs 0.0000
+-2.4914 <s> mrshughs 0.0000
+-2.4914 <s> my -0.2762
+-2.4914 <s> nice -0.2499
+-2.1903 <s> oh -0.2304
+-2.4914 <s> pleased 0.0000
+-2.4914 <s> thank 0.0000
+-2.4914 <s> the -0.2688
+-2.4914 <s> we're 0.0000
+-2.1903 <s> well -0.2304
+-2.4914 <s> wendy 0.0000
+-2.4914 <s> what -0.2840
+-2.4914 <s> what's 0.0000
+-2.4914 <s> you're -0.2553
+-2.2601 a are 0.0000
+-2.2601 a beautiful 0.0000
+-2.2601 a cab 0.0000
+-2.2601 a cousin 0.0000
+-1.9590 a do -0.1249
+-2.2601 a excuse 0.0000
+-1.9590 a few 0.0000
+-2.2601 a friend 0.0000
+-1.9590 a good -0.1249
+-1.7830 a goodbye -0.2304
+-2.2601 a great 0.0000
+-2.2601 a hand 0.0000
+-1.9590 a have -0.2583
+-2.2601 a how -0.2688
+-2.2601 a hurry 0.0000
+-1.2187 a i -0.2199
+-1.7830 a i'd 0.0000
+-1.5611 a i'm -0.1326
+-2.2601 a i've -0.2632
+-1.7830 a if -0.1597
+-2.2601 a is -0.2430
+-2.2601 a it's -0.2788
+-1.7830 a little 0.0000
+-2.2601 a long -0.1761
+-2.2601 a lttle 0.0000
+-2.2601 a my -0.2762
+-2.2601 a new -0.2218
+-1.9590 a nice -0.2499
+-2.2601 a no -0.2688
+-1.5611 a oh -0.1761
+-2.2601 a party 0.0000
+-2.2601 a please 0.0000
+-2.2601 a pleasure -0.1761
+-2.2601 a shame 0.0000
+-1.7830 a thank 0.0000
+-2.2601 a thanks -0.2430
+-1.4819 a that's -0.0580
+-1.7830 a until -0.0969
+-1.9590 a very -0.1919
+-2.2601 a well -0.2788
+-1.9590 a what -0.2663
+-2.2601 a wonderful 0.0000
+-2.2601 a would -0.1761
+-1.6580 a yes -0.0792
+-1.9590 a you -0.2921
+-1.0000 about going -0.1919
+-1.0000 about it -0.2619
+-1.0000 about time -0.2688
+-0.6990 about you -0.2513
+-0.3010 afford to -0.2863
+-0.3010 after they 0.0000
+-0.3010 afternoon </s> -0.3010
+-0.9031 again for -0.2863
+-0.9031 again have -0.2272
+-0.9031 again next -0.2218
+-0.9031 again soon -0.0969
+-0.3010 ages you -0.2951
+-0.7782 all i'll -0.2553
+-0.7782 all right 0.0000
+-0.7782 all the -0.2688
+-0.6021 already late 0.0000
+-0.6021 already won't -0.1761
+-0.3010 always takes 0.0000
+-0.3010 amazing it -0.2935
+-0.3010 an uncle 0.0000
+-1.3010 and don't -0.2041
+-1.3010 and give 0.0000
+-1.3010 and have -0.2583
+-0.8239 and i -0.2704
+-1.3010 and i'll -0.2553
+-1.3010 and it -0.2935
+-1.3010 and so -0.2430
+-1.3010 and you -0.2579
+-0.3010 angeles i -0.2961
+-0.7782 any chance 0.0000
+-0.4771 any plans 0.0000
+-0.3010 anyting special 0.0000
+-0.3010 anywhere </s> -0.3010
+-0.3010 are you -0.2831
+-0.3010 around much -0.2632
+-0.3010 asked you -0.2981
+-1.0792 at </s> -0.3010
+-1.0792 at all -0.2218
+-1.0792 at first 0.0000
+-1.0792 at half 0.0000
+-1.0792 at home -0.1761
+-1.0792 at least 0.0000
+-0.6021 away and -0.2304
+-0.6021 away on -0.2632
+-2.0492 b and -0.2304
+-2.0492 b but -0.2688
+-1.5721 b do -0.1249
+-2.0492 b does 0.0000
+-2.0492 b don't -0.2553
+-2.0492 b for -0.2863
+-1.2041 b i -0.2596
+-2.0492 b i'll -0.2553
+-1.5721 b i'm -0.1963
+-1.5721 b it -0.2536
+-2.0492 b it's -0.2788
+-2.0492 b just -0.2730
+-2.0492 b let -0.1249
+-2.0492 b los 0.0000
+-1.4472 b no -0.1549
+-1.5721 b oh -0.2041
+-2.0492 b palm 0.0000
+-2.0492 b same -0.0969
+-2.0492 b san -0.1761
+-2.0492 b so -0.2430
+-1.7482 b take -0.1249
+-2.0492 b thanks -0.2430
+-2.0492 b until -0.2430
+-1.2041 b well -0.0792
+-1.5721 b what -0.2478
+-1.7482 b when -0.2218
+-2.0492 b would -0.1761
+-2.0492 b yes -0.2553
+-2.0492 b you -0.2981
+-0.3010 back yesterday 0.0000
+-0.3010 bad that -0.2218
+-0.3010 bag for -0.2711
+-0.9031 be all -0.2218
+-0.6021 be going -0.1919
+-0.9031 be on -0.2632
+-0.3010 beautiful sweater 0.0000
+-0.3010 beautifully with -0.2218
+-1.0792 been around 0.0000
+-1.0792 been away -0.1761
+-1.0792 been in -0.2688
+-1.0792 been invited 0.0000
+-1.0792 been sich 0.0000
+-1.0792 been visiting 0.0000
+-0.3010 beg your -0.2788
+-0.3010 believe it -0.2935
+-0.3010 best to -0.2962
+-0.3010 better be -0.1761
+-0.3010 borrowed your -0.2788
+-0.3010 borrowing your -0.2788
+-0.3010 bought it -0.2935
+-0.3010 bound to -0.2962
+-0.7782 brother </s> -0.3010
+-0.7782 brother david 0.0000
+-0.7782 brother sam 0.0000
+-0.3010 brown </s> -0.3010
+-0.6690 but i -0.2704
+-1.1461 but it -0.2780
+-0.8451 but it's -0.2553
+-1.1461 but you -0.2981
+-0.3010 by </s> -0.3010
+-0.3010 cab </s> -0.3010
+-0.3010 california for -0.1663
+-0.3010 calling to -0.2762
+-0.6021 can come -0.1761
+-0.6021 can use -0.1249
+-0.9031 can't </s> -0.3010
+-0.9031 can't afford 0.0000
+-0.9031 can't get -0.2688
+-0.9031 can't you -0.2951
+-0.3010 car </s> -0.3010
+-0.6021 care and -0.2788
+-0.6021 care of -0.2825
+-0.3010 carry this -0.2430
+-0.3010 catch what -0.2663
+-0.3010 catching the -0.2852
+-0.3010 chaged jobs 0.0000
+-0.3010 chance of -0.2825
+-0.3010 cheap </s> -0.3010
+-0.3010 christmas </s> -0.3010
+-0.3010 climate i'd -0.1249
+-0.3010 coat </s> -0.3010
+-0.3010 coffee </s> -0.3010
+-0.3010 color too -0.2430
+-0.6021 come again -0.2430
+-0.6021 come to -0.2762
+-0.3010 coming </s> -0.3010
+-1.0792 could but -0.2341
+-1.0792 could find -0.1761
+-1.0792 could lend 0.0000
+-1.0792 could stay -0.2632
+-0.7782 could use 0.0000
+-0.3010 cousin there -0.1761
+-0.3010 dallas </s> -0.3010
+-0.3010 david </s> -0.3010
+-0.3010 days b -0.2892
+-0.3010 decided what -0.2840
+-0.3010 depends on -0.2632
+-0.3010 did you -0.2981
+-0.6021 didn't catch 0.0000
+-0.6021 didn't hear 0.0000
+-0.3010 diego i -0.2910
+-0.6021 different from 0.0000
+-0.6021 different the -0.2852
+-1.0000 do </s> -0.3010
+-1.4771 do much -0.2632
+-1.4771 do yet -0.1761
+-0.4771 do you -0.2546
+-0.3010 does it -0.2858
+-0.6021 doing </s> -0.3010
+-0.6021 doing anyting 0.0000
+-0.6990 don't forget 0.0000
+-1.0000 don't mention 0.0000
+-1.0000 don't worry 0.0000
+-1.0000 don't you -0.2951
+-0.3010 dropped in -0.2688
+-0.3010 dubois </s> -0.3010
+-0.3010 each other 0.0000
+-0.6021 early </s> -0.3010
+-0.6021 early tomorrow 0.0000
+-0.3010 easy </s> -0.3010
+-0.3010 either </s> -0.3010
+-0.3010 ello </s> -0.3010
+-0.3010 end of -0.2430
+-0.3010 enjoyable evening 0.0000
+-0.3010 enjoyed it -0.2619
+-0.3010 enjoying your -0.2788
+-0.3010 evening </s> -0.3010
+-0.3010 ever in -0.2688
+-0.3010 everyone </s> -0.3010
+-0.3010 everything </s> -0.3010
+-0.3010 exactly </s> -0.3010
+-0.3010 excuse me -0.2808
+-0.3010 expected </s> -0.3010
+-0.6021 expensive </s> -0.3010
+-0.6021 expensive either 0.0000
+-0.3010 family for -0.2863
+-0.3010 family's away -0.1761
+-0.3010 far </s> -0.3010
+-0.3010 feel that -0.2632
+-0.3010 feeling a -0.2938
+-0.6021 few days 0.0000
+-0.6021 few weeks 0.0000
+-0.6021 find it -0.2619
+-0.6021 find one -0.1761
+-0.3010 first i -0.2860
+-0.6021 fits ok 0.0000
+-0.6021 fits perfectly 0.0000
+-0.3010 flying home -0.1761
+-0.7782 for a -0.2865
+-1.4771 for ages 0.0000
+-1.4771 for coming 0.0000
+-1.4771 for everything 0.0000
+-1.4771 for how -0.2688
+-1.4771 for me -0.2374
+-1.0000 for the -0.2518
+-1.1761 for you -0.2579
+-0.3010 forget to -0.2711
+-0.3010 francisco </s> -0.3010
+-0.3010 friend of -0.2632
+-0.3010 friend's and -0.2788
+-0.3010 friends over -0.2553
+-0.3010 from what -0.2840
+-1.1461 get over -0.2553
+-1.1461 get this -0.2430
+-1.1461 get up -0.1761
+-0.6690 get used 0.0000
+-1.1461 get you -0.2951
+-0.3010 give my -0.2762
+-0.6021 glad to -0.2762
+-0.6021 glad you -0.2981
+-0.3010 go </s> -0.3010
+-0.3010 goes beautifully 0.0000
+-0.7782 going </s> -0.3010
+-1.2553 going anywhere 0.0000
+-1.2553 going now 0.0000
+-0.6532 going to -0.2711
+-0.7782 good on -0.2632
+-0.7782 good time -0.1963
+-0.7782 good trip 0.0000
+-0.8239 goodbye </s> -0.3010
+-1.3010 goodbye and -0.2788
+-1.3010 goodbye hope -0.2218
+-1.3010 goodbye remember 0.0000
+-1.3010 goodbye see 0.0000
+-1.3010 goodbye thanks -0.2430
+-1.0000 goodbye to -0.2913
+-1.0792 got a -0.2986
+-1.0792 got any -0.1249
+-1.0792 got back 0.0000
+-1.0792 got going -0.2218
+-1.0792 got here -0.2430
+-1.0792 got it -0.2935
+-0.3010 great party 0.0000
+-0.7782 guess </s> -0.3010
+-0.7782 guess i -0.2808
+-0.7782 guess that -0.2632
+-0.3010 had a -0.2962
+-0.3010 half price 0.0000
+-0.3010 hand </s> -0.3010
+-0.3010 hands when -0.2632
+-0.3010 happy new -0.2218
+-0.3010 hat </s> -0.3010
+-1.0280 have a -0.2914
+-1.5051 have any -0.1249
+-1.5051 have more 0.0000
+-1.5051 have one -0.1761
+-0.8062 have to -0.2606
+-0.8062 have you -0.2480
+-0.6021 haven't been -0.2218
+-0.9031 haven't decided 0.0000
+-0.9031 haven't seen -0.1761
+-0.6021 having a -0.2986
+-0.6021 having some -0.2553
+-0.3010 havn't seen -0.1761
+-0.3010 hear what -0.2663
+-0.3010 hello stranger 0.0000
+-0.3010 help </s> -0.3010
+-0.6021 here </s> -0.3010
+-0.9031 here can't -0.2430
+-0.9031 here very -0.2218
+-0.3010 hi </s> -0.3010
+-0.3010 holidays </s> -0.3010
+-0.6021 home </s> -0.3010
+-0.6021 home on -0.2632
+-0.3010 homesick and -0.2788
+-0.7782 hope to -0.2913
+-0.7782 hope you -0.2981
+-0.7782 hope you're -0.2553
+-1.1461 how about -0.2041
+-1.1461 how different -0.1761
+-0.6690 how do -0.1249
+-1.1461 how long -0.1761
+-1.1461 how nice -0.2499
+-0.3010 hurry i -0.2961
+-1.9445 i asked 0.0000
+-1.9445 i beg 0.0000
+-1.9445 i borrowed 0.0000
+-1.9445 i bought 0.0000
+-1.9445 i can -0.1761
+-1.6435 i can't -0.1761
+-1.3424 i could -0.1249
+-1.6435 i didn't 0.0000
+-1.9445 i expected 0.0000
+-1.6435 i got -0.2218
+-1.4674 i guess 0.0000
+-1.9445 i have -0.2272
+-1.6435 i haven't -0.1761
+-1.6435 i hope -0.1249
+-1.9445 i just -0.2730
+-1.6435 i like -0.2632
+-1.9445 i love -0.1761
+-1.4674 i really -0.2304
+-1.4674 i said 0.0000
+-1.9445 i stayed 0.0000
+-1.9445 i think -0.2688
+-1.9445 i thought 0.0000
+-1.9445 i was -0.2553
+-1.6435 i went 0.0000
+-1.4674 i wish 0.0000
+-1.9445 i would -0.2430
+-1.0792 i'd better 0.0000
+-0.4771 i'd like -0.1761
+-1.0792 i'd love -0.1761
+-1.0000 i'll carry 0.0000
+-1.0000 i'll get -0.2688
+-1.0000 i'll have -0.2272
+-1.0000 i'll let -0.2218
+-1.0000 i'll probably 0.0000
+-1.4472 i'm calling 0.0000
+-1.4472 i'm catching 0.0000
+-1.4472 i'm flying 0.0000
+-1.4472 i'm glad -0.1761
+-1.1461 i'm going -0.1919
+-1.4472 i'm just -0.2730
+-1.4472 i'm not -0.2553
+-0.8451 i'm sorry 0.0000
+-1.4472 i'm still 0.0000
+-1.4472 i'm very -0.2762
+-0.4771 i've been -0.1249
+-1.0792 i've come -0.1761
+-1.0792 i've got -0.2632
+-1.2553 if i -0.2961
+-1.2553 if it -0.2935
+-1.2553 if it's -0.2788
+-1.2553 if that's -0.2688
+-0.9542 if you -0.2951
+-1.2553 if you'd -0.1761
+-0.9542 if you're -0.2041
+-0.3010 impression of -0.2430
+-1.1461 in a -0.2986
+-1.1461 in california 0.0000
+-1.1461 in no -0.2688
+-1.1461 in san -0.1761
+-1.1461 in to -0.2762
+-1.1461 in touch 0.0000
+-1.1461 in washington 0.0000
+-0.3010 incredible </s> -0.3010
+-0.3010 introduce a -0.2986
+-0.3010 invited over -0.2553
+-0.9031 is here -0.1761
+-0.9031 is joe's 0.0000
+-0.9031 is peter 0.0000
+-0.9031 is there -0.1761
+-1.0645 it </s> -0.3010
+-1.7634 it always 0.0000
+-1.7634 it at -0.2632
+-1.7634 it but -0.2688
+-1.7634 it easy 0.0000
+-1.4624 it fits 0.0000
+-1.7634 it goes 0.0000
+-1.7634 it here -0.2430
+-1.7634 it i -0.2910
+-1.7634 it in -0.2688
+-1.4624 it looks -0.1249
+-1.7634 it matches 0.0000
+-1.7634 it on -0.2632
+-1.7634 it over -0.2553
+-1.4624 it really -0.2553
+-1.7634 it soon -0.0969
+-1.7634 it sure -0.2218
+-1.2863 it was -0.1461
+-1.7634 it wasn't 0.0000
+-1.7634 it weren't 0.0000
+-1.0000 it's a -0.2962
+-1.3010 it's about -0.2553
+-1.3010 it's already -0.1761
+-1.3010 it's just -0.2730
+-1.3010 it's nice -0.2499
+-1.3010 it's no -0.2688
+-1.3010 it's not -0.2553
+-1.3010 it's really -0.2788
+-1.3010 it's too -0.2430
+-0.3010 jacket </s> -0.3010
+-0.3010 jobs </s> -0.3010
+-0.3010 joe's brother -0.2218
+-1.2041 just dropped 0.0000
+-1.2041 just going -0.1919
+-1.2041 just got -0.2632
+-1.2041 just like -0.2430
+-1.2041 just not -0.2553
+-1.2041 just over -0.2553
+-1.2041 just stay -0.2632
+-1.2041 just tell 0.0000
+-0.3010 keep in -0.2688
+-0.3010 know later 0.0000
+-0.3010 la friend's 0.0000
+-0.3010 late </s> -0.3010
+-0.3010 lately have -0.2272
+-0.3010 later </s> -0.3010
+-0.3010 least have -0.2872
+-0.6021 leave </s> -0.3010
+-0.9031 leave by 0.0000
+-0.9031 leave so -0.2430
+-0.3010 leaves at -0.2632
+-0.3010 leaving </s> -0.3010
+-0.3010 lend me -0.2808
+-0.4771 let me -0.2596
+-0.7782 let you -0.2981
+-0.9031 like it -0.2536
+-1.0792 like me -0.2596
+-1.3802 like some -0.1461
+-1.3802 like texas 0.0000
+-1.3802 like the -0.2852
+-1.0792 like to -0.2711
+-1.3802 like you -0.2981
+-1.3802 like your -0.2788
+-0.7782 little homesick 0.0000
+-0.4771 little longer 0.0000
+-0.6021 long </s> -0.3010
+-0.6021 long time -0.1963
+-0.3010 longer </s> -0.3010
+-0.6021 look me -0.2808
+-0.6021 look ok 0.0000
+-0.7782 looks expensive -0.1761
+-0.7782 looks good -0.2218
+-0.7782 looks terrific 0.0000
+-0.3010 los angeles 0.0000
+-0.6021 love that -0.2632
+-0.6021 love to -0.2962
+-0.3010 lttle help 0.0000
+-0.3010 lucky to -0.2962
+-0.6021 many people 0.0000
+-0.6021 many things 0.0000
+-0.3010 mary this -0.1761
+-0.3010 matches your -0.2788
+-0.8653 me </s> -0.3010
+-1.3424 me i -0.2910
+-1.3424 me some -0.2553
+-1.3424 me stay -0.2632
+-1.3424 me think -0.1963
+-1.0414 me to -0.2711
+-1.3424 me up -0.1761
+-1.3424 me what -0.2840
+-0.3010 meal </s> -0.3010
+-1.0000 meet my -0.2499
+-0.3979 meet you -0.2579
+-0.3010 meeting after 0.0000
+-0.3010 mention it -0.2935
+-0.3010 merry christmas 0.0000
+-0.6021 mind i -0.2808
+-0.6021 mind if -0.2762
+-0.6021 mine in -0.2688
+-0.6021 mine pierre 0.0000
+-0.3010 monday or -0.1761
+-0.3010 month </s> -0.3010
+-0.3010 more coffee 0.0000
+-0.3010 moved or -0.1761
+-0.3010 mrs smith 0.0000
+-0.3010 mrshughs this -0.1761
+-1.0792 much </s> -0.3010
+-1.0792 much it -0.2780
+-1.0792 much lately 0.0000
+-1.0792 much trouble -0.1761
+-1.0792 much we -0.1761
+-1.0792 much what -0.2840
+-0.3010 must be -0.1761
+-1.2553 my best 0.0000
+-1.2553 my borrowing 0.0000
+-0.9542 my brother -0.1249
+-1.2553 my family's 0.0000
+-1.2553 my plane 0.0000
+-1.2553 my reemmate's 0.0000
+-1.2553 my sister's 0.0000
+-1.2553 my way -0.1761
+-0.7782 new coat 0.0000
+-0.7782 new place 0.0000
+-0.7782 new year 0.0000
+-0.7782 next week 0.0000
+-0.7782 next weekend -0.1761
+-0.7782 next year 0.0000
+-1.2553 nice jacket 0.0000
+-0.9542 nice of -0.2632
+-1.2553 nice thanksgiving 0.0000
+-0.9542 nice to -0.2659
+-1.2553 nice weekend -0.1761
+-0.9542 nice where -0.0969
+-1.1461 no i -0.2910
+-0.6690 no i've -0.1249
+-1.1461 no thanks -0.2430
+-1.1461 no time -0.1963
+-1.1461 no trouble -0.1761
+-1.0000 not in -0.2688
+-1.0000 not possible 0.0000
+-1.0000 not sure -0.2218
+-1.0000 not too -0.2430
+-1.0000 not yet -0.1761
+-0.3010 now </s> -0.3010
+-1.3802 of dallas 0.0000
+-1.0792 of mine 0.0000
+-1.3802 of my -0.2762
+-1.3802 of next -0.2218
+-0.9031 of the -0.2518
+-1.0792 of you -0.2951
+-1.3802 of your -0.2788
+-1.3802 of yourself 0.0000
+-0.3010 off </s> -0.3010
+-1.3010 oh i -0.2910
+-1.3010 oh i'll -0.2553
+-1.0000 oh i'm -0.2156
+-1.3010 oh it's -0.2553
+-1.3010 oh just -0.2730
+-1.3010 oh not -0.2553
+-1.3010 oh really -0.2788
+-1.3010 oh where -0.1761
+-1.3010 oh you'll 0.0000
+-0.3010 ok </s> -0.3010
+-1.0792 on me -0.2374
+-1.0792 on my -0.2762
+-1.0792 on sale 0.0000
+-1.0792 on sunday 0.0000
+-1.0792 on vacation 0.0000
+-1.0792 on when -0.2218
+-0.6021 one for -0.2553
+-0.6021 one just -0.2730
+-0.6021 or something 0.0000
+-0.6021 or tuesday 0.0000
+-0.3010 other for -0.2218
+-0.3010 our pleasure -0.1761
+-1.0000 over and -0.2788
+-1.0000 over how -0.2688
+-1.0000 over the -0.2852
+-1.0000 over to -0.2962
+-1.0000 over what -0.2840
+-0.3010 palm springs 0.0000
+-0.3010 pants </s> -0.3010
+-0.3010 pardon </s> -0.3010
+-0.3010 parents </s> -0.3010
+-0.3010 party </s> -0.3010
+-0.3010 past month 0.0000
+-0.3010 people shake 0.0000
+-0.3010 perfectly </s> -0.3010
+-0.3010 peter brown 0.0000
+-0.3010 pierre dubois 0.0000
+-0.3010 place </s> -0.3010
+-0.3010 plane leaves 0.0000
+-0.3010 plans </s> -0.3010
+-0.3010 please don't -0.2041
+-0.3010 pleased to -0.2762
+-0.6021 pleasure </s> -0.3010
+-0.6021 pleasure to -0.2762
+-0.3010 possible </s> -0.3010
+-0.3010 price </s> -0.3010
+-0.3010 probably just -0.2730
+-1.3010 really can't -0.2430
+-1.3010 really cheap 0.0000
+-1.3010 really depends 0.0000
+-1.3010 really different -0.1761
+-1.3010 really had 0.0000
+-1.3010 really like -0.2430
+-1.3010 really look -0.1761
+-1.3010 really must 0.0000
+-1.3010 really should 0.0000
+-1.3010 really where -0.2430
+-0.3010 records </s> -0.3010
+-0.3010 reemmate's having -0.1761
+-0.3010 relatives </s> -0.3010
+-0.3010 remember to -0.2962
+-0.3010 rest of -0.2430
+-0.3010 right </s> -0.3010
+-0.3010 road </s> -0.3010
+-0.3010 said </s> -0.3010
+-0.3010 sale </s> -0.3010
+-0.3010 sam </s> -0.3010
+-0.9031 same </s> -0.3010
+-0.4260 same to -0.2863
+-0.6021 san diego 0.0000
+-0.6021 san francisco 0.0000
+-0.3010 say goodbye -0.1761
+-0.3010 see you -0.2921
+-0.3010 seem strange 0.0000
+-0.6021 seen each 0.0000
+-0.6021 seen you -0.2861
+-0.3010 shake hands 0.0000
+-0.3010 shame that -0.2218
+-0.3010 shirt </s> -0.3010
+-0.3010 should be -0.2430
+-0.3010 sich have -0.2272
+-0.3010 sister's how -0.2688
+-0.3010 smith i'd -0.1249
+-0.9031 so early -0.1761
+-0.9031 so far 0.0000
+-0.9031 so many -0.1761
+-0.9031 so soon -0.2430
+-1.0000 some friends 0.0000
+-0.5229 some help 0.0000
+-1.0000 some of -0.2825
+-0.3010 something </s> -0.3010
+-0.4260 soon </s> -0.3010
+-0.9031 soon why 0.0000
+-0.6021 sorry but -0.1091
+-0.9031 sorry i -0.2860
+-0.9031 sorry you -0.2861
+-0.3010 special </s> -0.3010
+-0.3010 springs i've -0.2632
+-0.3010 states </s> -0.3010
+-1.0792 stay </s> -0.3010
+-0.7782 stay a -0.2938
+-1.0792 stay at -0.2632
+-1.0792 stay here -0.1761
+-1.0792 stay with -0.2218
+-0.3010 stayed with -0.2218
+-0.3010 still feeling 0.0000
+-0.3010 strange to -0.2962
+-0.3010 stranger have -0.2272
+-0.3010 suitcase for -0.2711
+-0.3010 sunday afternoon 0.0000
+-0.7782 sure i'll -0.2553
+-0.7782 sure looks -0.2218
+-0.7782 sure you're -0.2553
+-0.3010 sweater </s> -0.3010
+-0.4771 take care 0.0000
+-0.7782 take it -0.2935
+-0.3010 takes time -0.2688
+-0.3010 tell me -0.2808
+-0.3010 terrific </s> -0.3010
+-0.3010 texas so -0.2430
+-0.3010 thank you -0.2800
+-0.9031 thanks again -0.2430
+-0.9031 thanks all -0.2218
+-0.9031 thanks very -0.2218
+-0.9031 thanks you -0.2981
+-0.3010 thanksgiving </s> -0.3010
+-1.0792 that </s> -0.3010
+-1.0792 that shirt 0.0000
+-1.0792 that way -0.1761
+-1.0792 that would -0.2430
+-0.7782 that you -0.2861
+-1.1461 that's a -0.2962
+-1.1461 that's amazing 0.0000
+-1.1461 that's incredible 0.0000
+-1.1461 that's nice -0.2499
+-1.1461 that's ok 0.0000
+-0.8451 that's very -0.2218
+-1.4472 the climate 0.0000
+-1.4472 the color 0.0000
+-1.4472 the end 0.0000
+-1.4472 the family 0.0000
+-1.4472 the holidays 0.0000
+-1.4472 the past 0.0000
+-1.4472 the rest 0.0000
+-1.4472 the road 0.0000
+-1.1461 the same 0.0000
+-1.4472 the train 0.0000
+-1.4472 the united 0.0000
+-1.4472 the weather 0.0000
+-1.4472 the week 0.0000
+-0.6021 there </s> -0.3010
+-0.6021 there any -0.2218
+-0.3010 they havn't 0.0000
+-0.3010 things seem 0.0000
+-1.1461 think about -0.2553
+-0.6690 think it -0.2619
+-1.1461 think it's -0.2788
+-1.1461 think of -0.2825
+-1.1461 think you -0.2951
+-0.9031 this bag 0.0000
+-0.6021 this is -0.1761
+-0.9031 this suitcase 0.0000
+-0.3010 thought about -0.2553
+-0.6690 time </s> -0.3010
+-0.8451 time are 0.0000
+-1.1461 time to -0.2863
+-1.1461 time we -0.1761
+-1.9542 to a -0.2986
+-1.9542 to but -0.1963
+-1.9542 to california 0.0000
+-1.4771 to do -0.2218
+-1.9542 to everyone 0.0000
+-1.9542 to feel 0.0000
+-1.9542 to find -0.1761
+-1.4771 to get -0.1091
+-1.9542 to go 0.0000
+-1.9542 to introduce 0.0000
+-1.6532 to it -0.2858
+-1.9542 to keep 0.0000
+-1.9542 to la 0.0000
+-1.4771 to leave 0.0000
+-1.9542 to look -0.1761
+-1.9542 to me -0.2374
+-1.2553 to meet 0.0000
+-1.9542 to my -0.2762
+-1.2553 to say 0.0000
+-1.6532 to see 0.0000
+-1.9542 to take -0.2218
+-1.9542 to the -0.2852
+-1.9542 to think -0.2688
+-1.9542 to try 0.0000
+-1.9542 to visit 0.0000
+-1.4771 to you -0.2579
+-1.9542 to your -0.2788
+-0.3010 tomorrow </s> -0.3010
+-0.9031 too </s> -0.3010
+-0.9031 too bad 0.0000
+-0.9031 too it -0.2935
+-0.9031 too much -0.2632
+-0.3010 touch </s> -0.3010
+-0.3010 train </s> -0.3010
+-0.3010 trip </s> -0.3010
+-0.6021 trouble at -0.2632
+-0.6021 trouble i -0.2961
+-0.3010 try to -0.2863
+-0.3010 tuesday of -0.2825
+-0.3010 typewriter </s> -0.3010
+-0.3010 uncle of -0.2632
+-0.3010 united states 0.0000
+-0.9031 until monday 0.0000
+-0.9031 until next -0.2218
+-0.9031 until the -0.2852
+-0.9031 until when -0.2218
+-0.6021 up early -0.1761
+-0.6021 up if -0.2499
+-0.4771 use a -0.2962
+-0.7782 use some -0.1461
+-0.3010 used to -0.2863
+-0.3010 vacation </s> -0.3010
+-1.2553 very enjoyable 0.0000
+-1.2553 very expensive -0.1761
+-1.2553 very glad -0.1761
+-0.7782 very much -0.1761
+-0.7782 very nice -0.2218
+-0.3010 visit an 0.0000
+-0.3010 visiting relatives 0.0000
+-0.3010 wanted some -0.1461
+-1.0000 was a -0.2986
+-1.0000 was our 0.0000
+-1.0000 was really -0.2788
+-1.0000 was that -0.2632
+-1.0000 was wondering 0.0000
+-0.3010 washington </s> -0.3010
+-0.3010 wasn't very -0.2762
+-0.6021 way </s> -0.3010
+-0.6021 way at -0.2632
+-0.6021 we got -0.2632
+-0.6021 we really -0.2788
+-0.3010 we're having -0.1761
+-0.3010 weather is -0.2430
+-0.3010 week </s> -0.3010
+-0.6021 weekend </s> -0.3010
+-0.6021 weekend if -0.2762
+-0.3010 weeks </s> -0.3010
+-1.0000 well goodbye -0.2553
+-1.3010 well hello 0.0000
+-1.3010 well i -0.2910
+-1.0000 well i'm -0.2156
+-1.3010 well it's -0.2788
+-1.3010 well my -0.2762
+-1.3010 well thank 0.0000
+-1.3010 well when -0.2632
+-0.3010 wendy i'd -0.1249
+-0.3010 went to -0.2913
+-0.7782 were lucky 0.0000
+-0.4771 were you -0.2546
+-0.3010 weren't for -0.2553
+-1.4150 what a -0.2986
+-1.4150 what about -0.2041
+-1.4150 what already -0.1761
+-1.4150 what are 0.0000
+-1.4150 what do -0.1249
+-1.4150 what i -0.2961
+-1.4150 what i'm -0.2688
+-1.1139 what time -0.2341
+-1.4150 what was -0.2553
+-1.1139 what you -0.2951
+-1.4150 what you'd -0.1761
+-0.3010 what's your -0.2788
+-0.7782 when </s> -0.3010
+-1.0792 when are 0.0000
+-1.0792 when do -0.1249
+-1.0792 when exactly 0.0000
+-1.0792 when meeting 0.0000
+-0.9031 where </s> -0.3010
+-0.9031 where did 0.0000
+-0.6021 where were -0.1249
+-0.3010 why don't -0.2553
+-0.4771 wish i -0.2808
+-0.7782 wish you -0.2951
+-0.7782 with my -0.2499
+-0.7782 with you -0.2861
+-0.7782 with your -0.2788
+-0.6021 won't believe 0.0000
+-0.6021 won't you -0.2861
+-0.3010 wonderful meal 0.0000
+-0.3010 wondering if -0.2762
+-0.3010 worry you'll 0.0000
+-0.9031 would be -0.2430
+-0.9031 would like -0.2825
+-0.6021 would you -0.2921
+-0.3010 wouldn't mind -0.1761
+-0.3010 year </s> -0.3010
+-0.6990 yes and -0.2041
+-1.0000 yes i -0.2860
+-0.6990 yes it -0.2700
+-0.3010 yesterday </s> -0.3010
+-0.6021 yet </s> -0.3010
+-0.6021 yet at -0.2632
+-1.0241 you </s> -0.3010
+-1.8692 you a -0.2865
+-1.8692 you again -0.1761
+-2.1703 you but -0.1963
+-2.1703 you can -0.1761
+-2.1703 you chaged 0.0000
+-1.8692 you could -0.2218
+-1.8692 you do -0.2553
+-1.8692 you doing 0.0000
+-2.1703 you enjoyed 0.0000
+-2.1703 you exactly 0.0000
+-1.4713 you for -0.1856
+-2.1703 you go 0.0000
+-1.8692 you going -0.1919
+-2.1703 you got -0.2632
+-1.4713 you have -0.1938
+-1.8692 you haven't -0.1761
+-2.1703 you i -0.2860
+-2.1703 you if -0.2499
+-2.1703 you just -0.2730
+-2.1703 you know 0.0000
+-2.1703 you leave -0.1761
+-2.1703 you leaving 0.0000
+-1.8692 you like -0.2430
+-2.1703 you mind -0.1761
+-2.1703 you moved 0.0000
+-2.1703 you off 0.0000
+-2.1703 you really -0.2788
+-1.8692 you said 0.0000
+-2.1703 you same -0.0969
+-2.1703 you soon -0.0969
+-1.8692 you stay -0.2218
+-1.5682 you think -0.1091
+-2.1703 you to -0.2762
+-2.1703 you too -0.2430
+-2.1703 you very -0.2218
+-2.1703 you wanted 0.0000
+-2.1703 you were -0.2218
+-2.1703 you won't -0.1761
+-2.1703 you wouldn't 0.0000
+-0.6021 you'd let -0.1249
+-0.6021 you'd like -0.2632
+-0.3010 you'll get -0.1963
+-1.0000 you're bound 0.0000
+-1.0000 you're enjoying 0.0000
+-1.0000 you're ever 0.0000
+-1.0000 you're not -0.2553
+-1.0000 you're sure -0.2218
+-1.3010 your car 0.0000
+-1.3010 your hat 0.0000
+-1.3010 your impression 0.0000
+-1.3010 your new -0.2218
+-1.3010 your pants 0.0000
+-1.3010 your pardon 0.0000
+-1.3010 your parents 0.0000
+-1.3010 your records 0.0000
+-1.3010 your stay -0.2632
+-1.3010 your typewriter 0.0000
+-0.3010 yourself and -0.2788
+
+\3-grams:
+-2.1139 <s> a are
+-1.8129 <s> a do
+-2.1139 <s> a excuse
+-1.6368 <s> a goodbye
+-1.8129 <s> a have
+-2.1139 <s> a how
+-1.0726 <s> a i
+-1.6368 <s> a i'd
+-1.4150 <s> a i'm
+-2.1139 <s> a i've
+-1.6368 <s> a if
+-2.1139 <s> a is
+-2.1139 <s> a it's
+-2.1139 <s> a my
+-2.1139 <s> a no
+-1.5119 <s> a oh
+-2.1139 <s> a please
+-1.6368 <s> a thank
+-2.1139 <s> a thanks
+-1.3358 <s> a that's
+-1.6368 <s> a until
+-2.1139 <s> a well
+-1.8129 <s> a what
+-2.1139 <s> a would
+-1.5119 <s> a yes
+-1.8129 <s> a you
+-0.3010 <s> are you
+-2.0414 <s> b and
+-2.0414 <s> b but
+-1.5643 <s> b do
+-2.0414 <s> b does
+-2.0414 <s> b don't
+-2.0414 <s> b for
+-1.1963 <s> b i
+-2.0414 <s> b i'll
+-1.5643 <s> b i'm
+-1.7404 <s> b it
+-2.0414 <s> b it's
+-2.0414 <s> b just
+-2.0414 <s> b let
+-2.0414 <s> b los
+-1.4393 <s> b no
+-1.5643 <s> b oh
+-2.0414 <s> b palm
+-2.0414 <s> b same
+-2.0414 <s> b san
+-2.0414 <s> b so
+-1.7404 <s> b take
+-2.0414 <s> b thanks
+-2.0414 <s> b until
+-1.1963 <s> b well
+-1.5643 <s> b what
+-1.7404 <s> b when
+-2.0414 <s> b would
+-2.0414 <s> b yes
+-2.0414 <s> b you
+-0.3010 <s> don't worry
+-0.3010 <s> ello </s>
+-0.3010 <s> happy new
+-0.3010 <s> have you
+-0.3010 <s> hi </s>
+-0.3010 <s> how do
+-0.3010 <s> i hope
+-0.3010 <s> i'm very
+-0.3010 <s> i've been
+-0.3010 <s> if it
+-0.3010 <s> it always
+-0.6021 <s> it's a
+-0.6021 <s> it's really
+-0.3010 <s> many people
+-0.3010 <s> mary this
+-0.3010 <s> merry christmas
+-0.3010 <s> mrs smith
+-0.3010 <s> mrshughs this
+-0.3010 <s> my reemmate's
+-0.3010 <s> nice to
+-0.6021 <s> oh i'm
+-0.6021 <s> oh you'll
+-0.3010 <s> pleased to
+-0.3010 <s> thank you
+-0.3010 <s> the same
+-0.3010 <s> we're having
+-0.6021 <s> well i
+-0.6021 <s> well i'm
+-0.3010 <s> wendy i'd
+-0.3010 <s> what do
+-0.3010 <s> what's your
+-0.3010 <s> you're bound
+-0.3010 a are you
+-0.3010 a beautiful sweater
+-0.3010 a cab </s>
+-0.3010 a cousin there
+-0.3010 a do you
+-0.3010 a excuse me
+-0.6021 a few days
+-0.6021 a few weeks
+-0.3010 a friend of
+-0.6021 a good time
+-0.6021 a good trip
+-0.7782 a goodbye hope
+-0.7782 a goodbye remember
+-0.7782 a goodbye thanks
+-0.3010 a great party
+-0.3010 a hand </s>
+-0.3010 a have a
+-0.3010 a how nice
+-0.3010 a hurry i
+-1.3424 a i beg
+-1.3424 a i haven't
+-1.3424 a i just
+-1.3424 a i like
+-1.3424 a i love
+-1.0414 a i really
+-1.3424 a i think
+-1.3424 a i was
+-1.0414 a i wish
+-0.7782 a i'd better
+-0.7782 a i'd like
+-0.7782 a i'd love
+-1.0000 a i'm calling
+-1.0000 a i'm catching
+-1.0000 a i'm flying
+-1.0000 a i'm going
+-1.0000 a i'm sorry
+-0.3010 a i've come
+-0.7782 a if it's
+-0.7782 a if you
+-0.7782 a if you're
+-0.3010 a is there
+-0.3010 a it's nice
+-0.7782 a little homesick
+-0.4771 a little longer
+-0.3010 a long time
+-0.3010 a lttle help
+-0.3010 a my plane
+-0.3010 a new place
+-0.6021 a nice thanksgiving
+-0.6021 a nice weekend
+-0.3010 a no thanks
+-1.0000 a oh i
+-1.0000 a oh i'll
+-1.0000 a oh just
+-1.0000 a oh really
+-1.0000 a oh where
+-0.3010 a party </s>
+-0.3010 a please don't
+-0.3010 a pleasure to
+-0.3010 a shame that
+-0.3010 a thank you
+-0.3010 a thanks very
+-1.0792 a that's a
+-1.0792 a that's amazing
+-1.0792 a that's incredible
+-1.0792 a that's nice
+-0.7782 a that's very
+-0.7782 a until monday
+-0.7782 a until next
+-0.7782 a until the
+-0.6021 a very enjoyable
+-0.6021 a very nice
+-0.3010 a well hello
+-0.6021 a what a
+-0.6021 a what was
+-0.3010 a wonderful meal
+-0.3010 a would you
+-0.6021 a yes and
+-0.6021 a yes it
+-0.6021 a you haven't
+-0.6021 a you were
+-0.3010 about going to
+-0.3010 about it </s>
+-0.3010 about time we
+-0.6021 about you </s>
+-0.6021 about you a
+-0.3010 afford to do
+-0.3010 after they havn't
+-0.3010 again for everything
+-0.3010 again have you
+-0.3010 again next year
+-0.3010 again soon </s>
+-0.3010 ages you haven't
+-0.3010 all i'll carry
+-0.3010 all right </s>
+-0.3010 all the same
+-0.3010 already late </s>
+-0.3010 already won't you
+-0.3010 always takes time
+-0.3010 amazing it sure
+-0.3010 an uncle of
+-0.3010 and don't forget
+-0.3010 and give my
+-0.3010 and have a
+-0.7782 and i can't
+-0.7782 and i got
+-0.7782 and i like
+-0.3010 and i'll let
+-0.3010 and it goes
+-0.3010 and so many
+-0.3010 and you </s>
+-0.3010 angeles i stayed
+-0.3010 any chance of
+-0.3010 any plans </s>
+-0.3010 anyting special </s>
+-0.7782 are you doing
+-0.7782 are you going
+-1.0792 are you leaving
+-1.0792 are you off
+-0.3010 around much lately
+-0.3010 asked you if
+-0.3010 at all i'll
+-0.3010 at first i
+-0.3010 at half price
+-0.3010 at home </s>
+-0.3010 at least have
+-0.3010 away and i
+-0.3010 away on vacation
+-0.3010 b and i
+-0.3010 b but you
+-0.3010 b do you
+-0.3010 b does it
+-0.3010 b don't mention
+-0.3010 b for how
+-1.1461 b i asked
+-1.1461 b i bought
+-0.6690 b i said
+-1.1461 b i thought
+-1.1461 b i went
+-0.3010 b i'll get
+-0.7782 b i'm glad
+-0.7782 b i'm not
+-0.7782 b i'm sorry
+-0.7782 b it really
+-0.7782 b it was
+-0.7782 b it wasn't
+-0.3010 b it's no
+-0.3010 b just tell
+-0.3010 b let me
+-0.3010 b los angeles
+-0.9031 b no i
+-0.4260 b no i've
+-0.7782 b oh i'm
+-0.7782 b oh it's
+-0.7782 b oh not
+-0.3010 b palm springs
+-0.3010 b same to
+-0.3010 b san diego
+-0.3010 b so soon
+-0.3010 b take care
+-0.3010 b thanks you
+-0.3010 b until when
+-0.8451 b well goodbye
+-1.1461 b well i'm
+-1.1461 b well it's
+-1.1461 b well my
+-1.1461 b well thank
+-1.1461 b well when
+-0.7782 b what already
+-0.4771 b what time
+-0.6021 b when are
+-0.6021 b when do
+-0.3010 b would you
+-0.3010 b yes i
+-0.3010 b you won't
+-0.3010 back yesterday </s>
+-0.3010 bad that you
+-0.3010 bag for you
+-0.3010 be all right
+-0.6021 be going </s>
+-0.6021 be going now
+-0.3010 be on my
+-0.3010 beautiful sweater </s>
+-0.3010 beautifully with your
+-0.3010 been around much
+-0.3010 been away on
+-0.3010 been in california
+-0.3010 been invited over
+-0.3010 been sich have
+-0.3010 been visiting relatives
+-0.3010 beg your pardon
+-0.3010 believe it but
+-0.3010 best to your
+-0.3010 better be going
+-0.3010 borrowed your car
+-0.3010 borrowing your typewriter
+-0.3010 bought it at
+-0.3010 bound to feel
+-0.3010 brother david </s>
+-0.3010 brother sam </s>
+-0.7782 but i didn't
+-0.7782 but i have
+-0.7782 but i really
+-0.3010 but it was
+-0.6021 but it's already
+-0.6021 but it's just
+-0.3010 but you just
+-0.6021 california for a
+-0.6021 california for the
+-0.3010 calling to say
+-0.3010 can come again
+-0.3010 can use a
+-0.3010 can't afford to
+-0.3010 can't get over
+-0.3010 can't you stay
+-0.3010 care and give
+-0.3010 care of yourself
+-0.3010 carry this suitcase
+-0.3010 catch what you
+-0.3010 catching the train
+-0.3010 chaged jobs </s>
+-0.3010 chance of my
+-0.3010 climate i'd like
+-0.3010 color too it
+-0.3010 come again soon
+-0.3010 come to say
+-0.3010 could but it's
+-0.3010 could find one
+-0.3010 could lend me
+-0.3010 could stay </s>
+-0.6021 could use a
+-0.6021 could use some
+-0.3010 cousin there </s>
+-0.3010 days b it
+-0.3010 decided what i'm
+-0.3010 depends on when
+-0.3010 did you go
+-0.3010 didn't catch what
+-0.3010 didn't hear what
+-0.3010 diego i got
+-0.3010 different from what
+-0.3010 different the weather
+-0.3010 do much what
+-0.3010 do yet </s>
+-1.0000 do you do
+-1.3010 do you have
+-1.3010 do you leave
+-1.3010 do you like
+-1.3010 do you really
+-0.6990 do you think
+-0.3010 does it really
+-0.3010 doing anyting special
+-0.3010 don't forget to
+-0.3010 don't mention it
+-0.3010 don't worry you'll
+-0.3010 don't you stay
+-0.3010 dropped in to
+-0.3010 each other for
+-0.3010 early tomorrow </s>
+-0.3010 end of the
+-0.3010 enjoyable evening </s>
+-0.3010 enjoyed it </s>
+-0.3010 enjoying your stay
+-0.3010 ever in washington
+-0.3010 excuse me i
+-0.3010 expensive either </s>
+-0.3010 family for me
+-0.3010 family's away and
+-0.3010 feel that way
+-0.3010 feeling a little
+-0.3010 few days b
+-0.3010 few weeks </s>
+-0.3010 find it </s>
+-0.3010 find one just
+-0.3010 first i guess
+-0.3010 fits ok </s>
+-0.3010 fits perfectly </s>
+-0.3010 flying home on
+-0.6990 for a few
+-1.0000 for a long
+-1.0000 for a very
+-1.0000 for a wonderful
+-0.3010 for ages you
+-0.3010 for coming </s>
+-0.3010 for everything </s>
+-0.3010 for how long
+-0.3010 for me </s>
+-0.7782 for the climate
+-0.7782 for the past
+-0.7782 for the road
+-0.3010 for you </s>
+-0.6021 forget to keep
+-0.6021 forget to say
+-0.3010 friend of mine
+-0.3010 friend's and you
+-0.3010 friends over what
+-0.3010 from what i
+-0.3010 get over how
+-0.3010 get this bag
+-0.3010 get up early
+-0.3010 get used to
+-0.3010 get you a
+-0.3010 give my best
+-0.3010 glad to meet
+-0.3010 glad you enjoyed
+-0.3010 goes beautifully with
+-0.3010 going anywhere </s>
+-0.3010 going now </s>
+-0.9031 going to do
+-0.9031 going to my
+-0.9031 going to take
+-0.9031 going to try
+-0.3010 good on me
+-0.3010 good time </s>
+-0.3010 good trip </s>
+-0.3010 goodbye and have
+-0.3010 goodbye hope to
+-0.3010 goodbye remember to
+-0.3010 goodbye see you
+-0.3010 goodbye thanks again
+-0.6021 goodbye to everyone
+-0.6021 goodbye to the
+-0.3010 got a cousin
+-0.3010 got any plans
+-0.3010 got back yesterday
+-0.3010 got going </s>
+-0.3010 got here can't
+-0.3010 got it on
+-0.3010 great party </s>
+-0.3010 guess i could
+-0.3010 guess that would
+-0.3010 had a good
+-0.3010 half price </s>
+-0.3010 hands when meeting
+-0.3010 happy new year
+-0.7782 have a good
+-0.4771 have a nice
+-0.3010 have any plans
+-0.3010 have more coffee
+-0.3010 have one for
+-1.0000 have to get
+-1.0000 have to go
+-0.6990 have to leave
+-1.0000 have to think
+-0.6990 have you </s>
+-1.0000 have you chaged
+-1.0000 have you got
+-1.0000 have you moved
+-0.6021 haven't been around
+-0.6021 haven't been sich
+-0.3010 haven't decided what
+-0.3010 haven't seen you
+-0.3010 having a party
+-0.3010 having some friends
+-0.3010 havn't seen each
+-0.3010 hear what you
+-0.3010 hello stranger have
+-0.3010 here can't you
+-0.3010 here very much
+-0.3010 home on sunday
+-0.3010 homesick and so
+-0.3010 hope to see
+-0.3010 hope you can
+-0.3010 hope you're enjoying
+-0.3010 how about you
+-0.3010 how different the
+-0.3010 how do you
+-0.3010 how long </s>
+-0.3010 how nice where
+-0.3010 hurry i can
+-0.3010 i asked you
+-0.3010 i beg your
+-0.3010 i borrowed your
+-0.3010 i bought it
+-0.3010 i can use
+-0.6021 i can't afford
+-0.6021 i can't get
+-0.9031 i could but
+-0.9031 i could find
+-0.6021 i could use
+-0.6021 i didn't catch
+-0.6021 i didn't hear
+-0.3010 i expected </s>
+-0.6021 i got back
+-0.6021 i got it
+-0.7782 i guess </s>
+-0.7782 i guess i
+-0.7782 i guess that
+-0.3010 i have to
+-0.6021 i haven't decided
+-0.6021 i haven't seen
+-0.6021 i hope you
+-0.6021 i hope you're
+-0.3010 i just dropped
+-0.6021 i like the
+-0.6021 i like your
+-0.3010 i love that
+-0.7782 i really can't
+-0.7782 i really must
+-0.7782 i really should
+-0.3010 i said </s>
+-0.3010 i stayed with
+-0.3010 i think it's
+-0.3010 i thought about
+-0.3010 i was wondering
+-0.3010 i went to
+-0.4771 i wish i
+-0.7782 i wish you
+-0.3010 i would like
+-0.3010 i'd better be
+-0.9031 i'd like it
+-0.6021 i'd like to
+-0.9031 i'd like you
+-0.3010 i'd love to
+-0.3010 i'll carry this
+-0.3010 i'll get this
+-0.3010 i'll have to
+-0.3010 i'll let you
+-0.3010 i'll probably just
+-0.3010 i'm calling to
+-0.3010 i'm catching the
+-0.3010 i'm flying home
+-0.3010 i'm glad you
+-0.3010 i'm going to
+-0.3010 i'm just going
+-0.3010 i'm not sure
+-0.6021 i'm sorry but
+-0.9031 i'm sorry i
+-0.9031 i'm sorry you
+-0.3010 i'm still feeling
+-0.3010 i'm very glad
+-0.9031 i've been away
+-0.9031 i've been in
+-0.9031 i've been invited
+-0.9031 i've been visiting
+-0.3010 i've come to
+-0.3010 i've got a
+-0.3010 if i borrowed
+-0.3010 if it weren't
+-0.3010 if it's not
+-0.3010 if that's ok
+-0.6021 if you wanted
+-0.6021 if you wouldn't
+-0.3010 if you'd let
+-0.6021 if you're ever
+-0.6021 if you're sure
+-0.3010 impression of the
+-0.3010 in a hurry
+-0.3010 in california for
+-0.3010 in no time
+-0.3010 in san francisco
+-0.3010 in to say
+-0.3010 in touch </s>
+-0.3010 in washington </s>
+-0.3010 introduce a friend
+-0.3010 invited over to
+-0.3010 is here </s>
+-0.3010 is joe's brother
+-0.3010 is peter brown
+-0.3010 is there any
+-0.3010 it always takes
+-0.3010 it at half
+-0.3010 it but it
+-0.3010 it easy </s>
+-0.6021 it fits ok
+-0.6021 it fits perfectly
+-0.3010 it goes beautifully
+-0.3010 it here very
+-0.3010 it i hope
+-0.3010 it in no
+-0.6021 it looks good
+-0.6021 it looks terrific
+-0.3010 it matches your
+-0.3010 it on sale
+-0.3010 it over and
+-0.6021 it really depends
+-0.6021 it really look
+-0.3010 it soon </s>
+-0.3010 it sure looks
+-0.7782 it was a
+-0.7782 it was our
+-0.7782 it was really
+-0.3010 it wasn't very
+-0.3010 it weren't for
+-0.6021 it's a pleasure
+-0.6021 it's a shame
+-0.3010 it's about time
+-0.3010 it's already late
+-0.3010 it's just not
+-0.3010 it's nice to
+-0.3010 it's no trouble
+-0.3010 it's not too
+-0.3010 it's really different
+-0.3010 it's too bad
+-0.3010 joe's brother david
+-0.3010 just dropped in
+-0.3010 just going to
+-0.3010 just got here
+-0.3010 just like it
+-0.3010 just not possible
+-0.3010 just over the
+-0.3010 just stay at
+-0.3010 just tell me
+-0.3010 keep in touch
+-0.3010 know later </s>
+-0.3010 la friend's and
+-0.3010 lately have you
+-0.3010 least have one
+-0.3010 leave by </s>
+-0.3010 leave so early
+-0.3010 leaves at </s>
+-0.3010 lend me some
+-0.6021 let me stay
+-0.6021 let me think
+-0.3010 let you know
+-0.4771 like it </s>
+-0.7782 like it here
+-0.3010 like me to
+-0.3010 like some help
+-0.3010 like texas so
+-0.3010 like the color
+-0.6021 like to introduce
+-0.6021 like to say
+-0.3010 like you to
+-0.3010 like your new
+-0.3010 little homesick and
+-0.3010 little longer </s>
+-0.3010 long time </s>
+-0.3010 look me up
+-0.3010 look ok </s>
+-0.3010 looks expensive </s>
+-0.3010 looks good on
+-0.3010 looks terrific </s>
+-0.3010 los angeles i
+-0.3010 love that shirt
+-0.3010 love to but
+-0.3010 lttle help </s>
+-0.3010 lucky to find
+-0.3010 many people shake
+-0.3010 many things seem
+-0.3010 mary this is
+-0.3010 matches your hat
+-0.3010 me i didn't
+-0.3010 me some of
+-0.3010 me stay with
+-0.3010 me think it
+-0.6021 me to do
+-0.6021 me to get
+-0.3010 me up if
+-0.3010 me what you'd
+-0.3010 meet my brother
+-0.3010 meet you </s>
+-0.3010 meeting after they
+-0.3010 mention it i
+-0.3010 merry christmas </s>
+-0.3010 mind i could
+-0.3010 mind if i
+-0.3010 mine in san
+-0.3010 mine pierre dubois
+-0.3010 monday or tuesday
+-0.3010 more coffee </s>
+-0.3010 moved or something
+-0.3010 mrs smith i'd
+-0.3010 mrshughs this is
+-0.3010 much it was
+-0.3010 much lately have
+-0.3010 much trouble i
+-0.3010 much we really
+-0.3010 much what about
+-0.3010 must be going
+-0.3010 my best to
+-0.3010 my borrowing your
+-0.6021 my brother </s>
+-0.6021 my brother sam
+-0.3010 my family's away
+-0.3010 my plane leaves
+-0.3010 my reemmate's having
+-0.3010 my sister's how
+-0.3010 my way </s>
+-0.3010 new coat </s>
+-0.3010 new place </s>
+-0.3010 new year </s>
+-0.3010 next week </s>
+-0.3010 next weekend if
+-0.3010 next year </s>
+-0.3010 nice jacket </s>
+-0.3010 nice of you
+-0.3010 nice thanksgiving </s>
+-0.6021 nice to meet
+-0.6021 nice to see
+-0.3010 nice weekend </s>
+-0.6021 nice where </s>
+-0.6021 nice where were
+-0.3010 no i went
+-0.3010 no i've been
+-0.3010 no thanks all
+-0.3010 no time </s>
+-0.3010 no trouble at
+-0.3010 not in a
+-0.3010 not possible </s>
+-0.3010 not sure i'll
+-0.3010 not too much
+-0.3010 not yet at
+-0.3010 of dallas </s>
+-0.6021 of mine in
+-0.6021 of mine pierre
+-0.3010 of my borrowing
+-0.3010 of next week
+-0.7782 of the family
+-0.7782 of the united
+-0.7782 of the week
+-0.6021 of you but
+-0.6021 of you i
+-0.3010 of your records
+-0.3010 of yourself and
+-0.3010 oh i haven't
+-0.3010 oh i'll probably
+-0.6021 oh i'm just
+-0.6021 oh i'm sorry
+-0.3010 oh it's a
+-0.3010 oh just over
+-0.3010 oh not yet
+-0.3010 oh really where
+-0.3010 oh where were
+-0.3010 oh you'll get
+-0.3010 on me </s>
+-0.3010 on my way
+-0.3010 on sale </s>
+-0.3010 on sunday afternoon
+-0.3010 on vacation </s>
+-0.3010 on when </s>
+-0.3010 one for the
+-0.3010 one just like
+-0.3010 or something </s>
+-0.3010 or tuesday of
+-0.3010 other for a
+-0.3010 our pleasure </s>
+-0.3010 over and i'll
+-0.3010 over how different
+-0.3010 over the holidays
+-0.3010 over to la
+-0.3010 over what are
+-0.3010 palm springs i've
+-0.3010 past month </s>
+-0.3010 people shake hands
+-0.3010 peter brown </s>
+-0.3010 pierre dubois </s>
+-0.3010 plane leaves at
+-0.3010 please don't forget
+-0.3010 pleased to meet
+-0.3010 pleasure to meet
+-0.3010 probably just stay
+-0.3010 really can't </s>
+-0.3010 really cheap </s>
+-0.3010 really depends on
+-0.3010 really different from
+-0.3010 really had a
+-0.3010 really like it
+-0.3010 really look ok
+-0.3010 really must be
+-0.3010 really should be
+-0.3010 really where did
+-0.3010 reemmate's having a
+-0.3010 remember to look
+-0.3010 rest of the
+-0.3010 same to you
+-0.3010 san diego i
+-0.3010 san francisco </s>
+-0.5229 say goodbye </s>
+-0.6990 say goodbye to
+-0.4771 see you again
+-0.7782 see you soon
+-0.3010 seem strange to
+-0.3010 seen each other
+-0.3010 seen you for
+-0.3010 shake hands when
+-0.3010 shame that you
+-0.3010 should be on
+-0.3010 sich have you
+-0.3010 sister's how about
+-0.3010 smith i'd like
+-0.3010 so early </s>
+-0.3010 so far </s>
+-0.3010 so many things
+-0.3010 so soon why
+-0.3010 some friends over
+-0.3010 some help </s>
+-0.3010 some of your
+-0.3010 soon why don't
+-0.6021 sorry but i
+-0.6021 sorry but it's
+-0.3010 sorry i wish
+-0.3010 sorry you have
+-0.3010 springs i've got
+-0.3010 stay a little
+-0.3010 stay at home
+-0.3010 stay here </s>
+-0.3010 stay with you
+-0.3010 stayed with my
+-0.3010 still feeling a
+-0.3010 strange to me
+-0.3010 stranger have you
+-0.3010 suitcase for you
+-0.3010 sunday afternoon </s>
+-0.3010 sure i'll have
+-0.3010 sure looks expensive
+-0.3010 sure you're not
+-0.6021 take care and
+-0.6021 take care of
+-0.3010 take it easy
+-0.3010 takes time to
+-0.3010 tell me what
+-0.3010 texas so far
+-0.5229 thank you for
+-1.0000 thank you same
+-1.0000 thank you very
+-0.3010 thanks again for
+-0.3010 thanks all the
+-0.3010 thanks very much
+-0.3010 thanks you too
+-0.3010 that shirt </s>
+-0.3010 that way at
+-0.3010 that would be
+-0.3010 that you have
+-0.3010 that's a very
+-0.3010 that's amazing it
+-0.3010 that's incredible </s>
+-0.3010 that's nice where
+-0.3010 that's ok </s>
+-0.3010 that's very nice
+-0.3010 the climate i'd
+-0.3010 the color too
+-0.3010 the end of
+-0.3010 the family for
+-0.3010 the holidays </s>
+-0.3010 the past month
+-0.3010 the rest of
+-0.3010 the road </s>
+-0.6021 the same </s>
+-0.6021 the same to
+-0.3010 the train </s>
+-0.3010 the united states
+-0.3010 the weather is
+-0.3010 the week </s>
+-0.3010 there any chance
+-0.3010 they havn't seen
+-0.3010 things seem strange
+-0.3010 think about it
+-0.7782 think it fits
+-0.7782 think it looks
+-0.7782 think it over
+-0.3010 think it's about
+-0.3010 think of dallas
+-0.3010 think you could
+-0.3010 this bag for
+-0.6021 this is joe's
+-0.6021 this is peter
+-0.3010 this suitcase for
+-0.3010 thought about going
+-0.3010 time are you
+-0.3010 time to get
+-0.3010 time we got
+-0.3010 to a new
+-0.3010 to but i
+-0.3010 to california for
+-0.7782 to do </s>
+-0.7782 to do much
+-0.7782 to do yet
+-0.3010 to everyone </s>
+-0.3010 to feel that
+-0.3010 to find it
+-0.7782 to get up
+-0.7782 to get used
+-0.7782 to get you
+-0.3010 to go </s>
+-0.3010 to introduce a
+-0.6021 to it in
+-0.6021 to it soon
+-0.3010 to keep in
+-0.3010 to la friend's
+-0.7782 to leave </s>
+-0.7782 to leave by
+-0.7782 to leave so
+-0.3010 to look me
+-0.3010 to me </s>
+-1.0000 to meet my
+-0.3979 to meet you
+-0.3010 to my sister's
+-0.3010 to say goodbye
+-0.3010 to see you
+-0.3010 to take it
+-0.3010 to the rest
+-0.3010 to think about
+-0.3010 to try to
+-0.3010 to visit an
+-0.3010 to you </s>
+-0.3010 to your parents
+-0.3010 too bad that
+-0.3010 too it matches
+-0.3010 too much trouble
+-0.3010 trouble at all
+-0.3010 trouble i would
+-0.3010 try to leave
+-0.3010 tuesday of next
+-0.3010 uncle of mine
+-0.3010 united states </s>
+-0.3010 until monday or
+-0.3010 until next weekend
+-0.3010 until the end
+-0.3010 until when </s>
+-0.3010 up early tomorrow
+-0.3010 up if you're
+-0.6021 use a hand
+-0.6021 use a lttle
+-0.3010 use some help
+-0.7782 used to a
+-0.4771 used to it
+-0.3010 very enjoyable evening
+-0.3010 very expensive either
+-0.3010 very glad to
+-0.7782 very much </s>
+-0.7782 very much it
+-0.7782 very much we
+-0.7782 very nice jacket
+-0.4771 very nice of
+-0.3010 visit an uncle
+-0.3010 visiting relatives </s>
+-0.3010 wanted some help
+-0.3010 was a great
+-0.3010 was our pleasure
+-0.3010 was really cheap
+-0.3010 was that </s>
+-0.3010 was wondering if
+-0.3010 wasn't very expensive
+-0.3010 way at first
+-0.3010 we got going
+-0.3010 we really had
+-0.3010 we're having some
+-0.3010 weather is here
+-0.3010 weekend if that's
+-0.6021 well goodbye and
+-0.6021 well goodbye see
+-0.3010 well hello stranger
+-0.3010 well i can't
+-0.6021 well i'm sorry
+-0.6021 well i'm still
+-0.3010 well it's too
+-0.3010 well my family's
+-0.3010 well thank you
+-0.3010 well when exactly
+-0.3010 wendy i'd like
+-0.6021 went to california
+-0.6021 went to visit
+-0.3010 were lucky to
+-0.6021 were you </s>
+-0.6021 were you exactly
+-0.3010 weren't for the
+-0.3010 what a beautiful
+-0.3010 what about you
+-0.3010 what already won't
+-0.3010 what are you
+-0.3010 what do you
+-0.3010 what i expected
+-0.3010 what i'm going
+-0.3010 what time are
+-0.3010 what was that
+-0.3010 what you said
+-0.3010 what you'd like
+-0.3010 what's your impression
+-0.3010 when are you
+-0.3010 when do you
+-0.3010 when exactly </s>
+-0.3010 when meeting after
+-0.3010 where did you
+-0.3010 where were you
+-0.3010 why don't you
+-0.3010 wish i could
+-0.3010 wish you could
+-0.3010 with my brother
+-0.3010 with you for
+-0.3010 with your pants
+-0.3010 won't believe it
+-0.3010 won't you have
+-0.3010 wonderful meal </s>
+-0.3010 wondering if you'd
+-0.3010 worry you'll get
+-0.3010 would be all
+-0.3010 would like some
+-0.6021 would you like
+-0.6021 would you mind
+-0.3010 wouldn't mind i
+-0.6021 yes and i
+-0.6021 yes and it
+-0.3010 yes i guess
+-0.6021 yes it fits
+-0.6021 yes it looks
+-0.3010 yet at least
+-0.6021 you a cab
+-0.6021 you a oh
+-0.6021 you again have
+-0.6021 you again next
+-0.3010 you but i
+-0.3010 you can come
+-0.3010 you chaged jobs
+-0.6021 you could lend
+-0.6021 you could stay
+-0.3010 you do </s>
+-0.6021 you doing </s>
+-0.6021 you doing anyting
+-0.3010 you enjoyed it
+-0.3010 you exactly </s>
+-0.5229 you for a
+-1.0000 you for ages
+-1.0000 you for coming
+-0.3010 you go </s>
+-0.6021 you going </s>
+-0.6021 you going anywhere
+-0.3010 you got any
+-1.0000 you have any
+-1.0000 you have more
+-0.5229 you have to
+-0.3010 you haven't been
+-0.3010 you i guess
+-0.3010 you if you
+-0.3010 you just got
+-0.3010 you know later
+-0.3010 you leave </s>
+-0.3010 you leaving </s>
+-0.6021 you like me
+-0.6021 you like texas
+-0.3010 you mind if
+-0.3010 you moved or
+-0.3010 you off </s>
+-0.3010 you really like
+-0.3010 you said </s>
+-0.3010 you same to
+-0.3010 you soon </s>
+-0.3010 you stay a
+-0.6021 you think it
+-0.9031 you think of
+-0.9031 you think you
+-0.3010 you to meet
+-0.3010 you too </s>
+-0.3010 you very much
+-0.3010 you wanted some
+-0.3010 you were lucky
+-0.3010 you won't believe
+-0.3010 you wouldn't mind
+-0.3010 you'd let me
+-0.3010 you'd like me
+-0.3010 you'll get used
+-0.3010 you're bound to
+-0.3010 you're enjoying your
+-0.3010 you're ever in
+-0.3010 you're not in
+-0.3010 you're sure you're
+-0.3010 your car </s>
+-0.3010 your hat </s>
+-0.3010 your impression of
+-0.3010 your new coat
+-0.3010 your pants </s>
+-0.3010 your pardon </s>
+-0.3010 your parents </s>
+-0.3010 your records </s>
+-0.3010 your stay here
+-0.3010 your typewriter </s>
+-0.3010 yourself and don't
+
+\end\
