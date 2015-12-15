@@ -7,6 +7,7 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Rect;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.View;
 
 import java.util.ArrayList;
@@ -24,7 +25,8 @@ public class DiffColorTextView extends View {
     private int mTextSize;
     
     private Paint mPaint;
-    private Rect mBound;
+
+    private Paint.FontMetrics fontMetrics;
 
     private List<WordModel> mWordList = new ArrayList<>();
     private StringBuffer mStringBuf = new StringBuffer();
@@ -62,8 +64,7 @@ public class DiffColorTextView extends View {
         mPaint = new Paint();
         mPaint.setColor(mCorrectColor);
         mPaint.setTextSize(mTextSize);
-
-        mBound = new Rect();
+        fontMetrics = mPaint.getFontMetrics();
     }
 
     @Override
@@ -72,7 +73,6 @@ public class DiffColorTextView extends View {
             if(mWordList==null)
                 return;
 
-            Paint.FontMetrics fontMetrics = mPaint.getFontMetrics();
             mStringBuf.delete(0,mStringBuf.length());
 
             int baseY = (int) Math.abs(fontMetrics.top+fontMetrics.bottom);
@@ -97,12 +97,12 @@ public class DiffColorTextView extends View {
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec)
     {
-        mStringBuf.delete(0,mStringBuf.length());
+        mStringBuf.delete(0, mStringBuf.length());
         for(WordModel item : mWordList){
             mStringBuf.append(item.getWord()+" ");
         }
-        mPaint.getTextBounds(mStringBuf.toString(), 0, mStringBuf.toString().length(), mBound);
-        mPaint.measureText(mStringBuf.toString());
+        int measureH = (int) Math.abs(fontMetrics.top-fontMetrics.bottom);
+        int measureW = (int) mPaint.measureText(mStringBuf.toString()); //Return the width of the text.
 
         int width = 0;
         int height = 0;
@@ -118,7 +118,7 @@ public class DiffColorTextView extends View {
                 width = getPaddingLeft() + getPaddingRight() + specSize;
                 break;
             case MeasureSpec.AT_MOST:// 一般为WARP_CONTENT
-                width = getPaddingLeft() + getPaddingRight() + mBound.width();
+                width = getPaddingLeft() + getPaddingRight() + measureW;
                 break;
         }
 
@@ -133,7 +133,7 @@ public class DiffColorTextView extends View {
                 height = getPaddingTop() + getPaddingBottom() + specSize;
                 break;
             case MeasureSpec.AT_MOST:// 一般为WARP_CONTENT
-                height = getPaddingTop() + getPaddingBottom() + mBound.height();
+                height = getPaddingTop() + getPaddingBottom() + measureH;
                 break;
         }
 
