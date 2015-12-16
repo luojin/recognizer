@@ -157,7 +157,9 @@ public class PocketSphinxActivity extends Activity implements
                 } else {
                     setControlBtn(start);
                     controlBtn.setVisibility(View.VISIBLE);
-                    showCaption("say a sentence, click button to get the result.");
+//                    showCaption("say a sentence, click button to get the result.");
+                    String nextRead = getNextString();
+                    showCaption(nextRead);
                 }
             }
         }.execute();
@@ -191,6 +193,8 @@ public class PocketSphinxActivity extends Activity implements
 
         showLog("onResult: " + hypothesis.getHypstr());
         handleResult(hypothesis.getHypstr());
+
+
     }
 
     @Override
@@ -212,8 +216,7 @@ public class PocketSphinxActivity extends Activity implements
     private void startRecognizer(){
         stopRecognizer();
 
-        String nextRead = getNextString();
-        showCaption(nextRead);
+
 
         //recognizer.startListening(SENTENCE_SEARCH,10000); timeout=10s
         recognizer.startListening(SENTENCE_SEARCH); //stop manual
@@ -285,13 +288,16 @@ public class PocketSphinxActivity extends Activity implements
         wordList.clear();
         String[] originList = origin.split(" ");
         for (String s:originList){
-            if(result.contains(s.replaceAll("[^a-z]+","")))
+            if(result.contains(s.replaceAll("[^a-z']+","")))
                 wordList.add(new WordModel(s,true));
             else
                 wordList.add(new WordModel(s,false));
         }
         Log.e("test","size="+wordList.size());
         compareTV.setText(wordList);
+
+        String nextRead = getNextString();
+        showCaption(nextRead);
     }
 
     private void setControlBtn(boolean begin){
